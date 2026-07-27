@@ -50,6 +50,14 @@ h2 {
 }
 .badge.warn { background: var(--warn-bg); color: var(--warn-ink); }
 .empty { color: var(--ink-soft); font-style: italic; }
+.updated-badge {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  margin-top: 0.7rem; font-size: 0.85rem; color: var(--ink-soft);
+  background: var(--accent-soft); padding: 0.3rem 0.7rem; border-radius: 999px;
+}
+.updated-badge .dot {
+  width: 7px; height: 7px; border-radius: 50%; background: var(--accent);
+}
 footer {
   margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--border);
   color: var(--ink-soft); font-size: 0.85rem;
@@ -68,13 +76,24 @@ footer {
   <header>
     <h1>Boise Rental Watch</h1>
     <div class="subtitle">Boise houses, townhomes &amp; condos under $1,600/mo &middot; cats OK &middot; move-in by 2026-08-15</div>
+    <div class="updated-badge"><span class="dot"></span>Updated Jul 26, 2026 at 9:19 PM MT &middot; refreshes daily at 8am MT</div>
   </header>
 
-  <h2>Contact Today (46)</h2>
+  <h2>Contact Today (47)</h2>
     <div class="card">
       <div class="card-top">
         <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-effortless-commute-br-townhome/s7jYtNfEo5dXYs3gTHhFJB" target="_blank" rel="noopener">Effortless Commute: 2 BR Townhome w/ Climate Control Storage</a></div>
         <div class="price">$1,410/mo</div>
+      </div>
+      <div class="meta">Boise Bench &middot; 2 bd / 2 ba &middot; craigslist</div>
+      <div class="why">Posted in the last 24h, exact neighborhood match, cats explicitly ok</div>
+      <div class="badges"></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-gorgeous-br-townhome-wood/21RtAv211B2VMBQJikT5AD" target="_blank" rel="noopener">Gorgeous 2 BR Townhome w/ Wood Flooring &amp; Upgraded Appliances</a></div>
+        <div class="price">$1,255/mo</div>
       </div>
       <div class="meta">Boise Bench &middot; 2 bd / 2 ba &middot; craigslist</div>
       <div class="why">Posted in the last 24h, exact neighborhood match, cats explicitly ok</div>
@@ -133,10 +152,20 @@ footer {
     
     <div class="card">
       <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-unbeatable-br-townhome-pool-bbqs/t6UJq1f2JfDBdMA9day3Yb" target="_blank" rel="noopener">Unbeatable 2 BR Townhome w/ Pool &amp; BBQs</a></div>
-        <div class="price">$1,410/mo</div>
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-charming-bedroom-bathroom-home/aMg43jRks9H7tbwWjGDV27" target="_blank" rel="noopener">Charming 2 bedroom 1 bathroom home</a></div>
+        <div class="price">$850/mo</div>
       </div>
-      <div class="meta">Boise Bench &middot; 1 bd / 1 ba &middot; craigslist</div>
+      <div class="meta">Boise, ID &middot; 2 bd / 1 ba &middot; craigslist</div>
+      <div class="why">Posted in the last 24h, exact neighborhood match, cats explicitly ok</div>
+      <div class="badges"></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-professional-leasing-staff-smoke/j7LwotXixdB9XUfyAwgyqA" target="_blank" rel="noopener">Professional Leasing Staff, Smoke Free, Near Hiking and Biking Trails</a></div>
+        <div class="price">$1,280/mo</div>
+      </div>
+      <div class="meta">North End Boise &middot; 1 bd / 1 ba &middot; craigslist</div>
       <div class="why">Posted in the last 24h, exact neighborhood match, cats explicitly ok</div>
       <div class="badges"></div>
     </div>
@@ -167,16 +196,6 @@ footer {
         <div class="price">$1,280/mo</div>
       </div>
       <div class="meta">Lusk District Boise &middot; 1 bd / 1 ba &middot; craigslist</div>
-      <div class="why">Posted in the last 24h, exact neighborhood match, cats explicitly ok</div>
-      <div class="badges"></div>
-    </div>
-    
-    <div class="card">
-      <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-patio-heating-professional/vyr9fmojLgTtMSEkZgXNC2" target="_blank" rel="noopener">Patio, Heating, Professional Leasing Staff, Pet Friendly</a></div>
-        <div class="price">$1,280/mo</div>
-      </div>
-      <div class="meta">North End Boise &middot; 1 bd / 1 ba &middot; craigslist</div>
       <div class="why">Posted in the last 24h, exact neighborhood match, cats explicitly ok</div>
       <div class="badges"></div>
     </div>
@@ -214,7 +233,7 @@ footer {
     <div class="card">
       <div class="card-top">
         <div class="card-title"><a href="https://www.craigslist.org/view/d/middleton-middleton-rv-site-full-hookups/afsMVJhxLyeyfbDR8Kq2gH" target="_blank" rel="noopener">Middleton RV site, full hookups</a></div>
-        <div class="price">$860/mo</div>
+        <div class="price">$900/mo</div>
       </div>
       <div class="meta">Middleton &middot; 1 bd / 1 ba &middot; craigslist</div>
       <div class="why">Posted in the last 24h, cats explicitly ok</div>
@@ -554,6 +573,16 @@ footer {
     
     <div class="card">
       <div class="card-top">
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-cooling-pet-friendly-stainless/vfBHvKcGw14fzxZ2urEXfR" target="_blank" rel="noopener">Cooling, Pet Friendly, Stainless Steel Oven, Off Street Parking</a></div>
+        <div class="price">$1,240/mo</div>
+      </div>
+      <div class="meta">North End Boise &middot; 2 bd / 2 ba &middot; craigslist</div>
+      <div class="why">Exact neighborhood match, cats explicitly ok</div>
+      <div class="badges"></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-top">
         <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-air-conditioning-plus-ceiling/edY7V1f4161rxuNCBU4eqP" target="_blank" rel="noopener">Air Conditioning Plus Ceiling Fans, Bike score 94</a></div>
         <div class="price">$1,280/mo</div>
       </div>
@@ -568,16 +597,6 @@ footer {
         <div class="price">$1,595/mo</div>
       </div>
       <div class="meta">8759 W Pocono St. - Garden City &middot; 2 bd / 1 ba &middot; craigslist</div>
-      <div class="why">Exact neighborhood match, cats explicitly ok</div>
-      <div class="badges"></div>
-    </div>
-    
-    <div class="card">
-      <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-cooling-pet-friendly-stainless/vfBHvKcGw14fzxZ2urEXfR" target="_blank" rel="noopener">Cooling, Pet Friendly, Stainless Steel Oven, Off Street Parking</a></div>
-        <div class="price">$1,240/mo</div>
-      </div>
-      <div class="meta">North End Boise &middot; 2 bd / 2 ba &middot; craigslist</div>
       <div class="why">Exact neighborhood match, cats explicitly ok</div>
       <div class="badges"></div>
     </div>
@@ -607,7 +626,17 @@ footer {
         <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-fully-equipped-kitchen-with/gYSXE3ZnvuQeK7AoG4i6gC" target="_blank" rel="noopener">Fully Equipped Kitchen with Dishwasher, Upgraded Features</a></div>
         <div class="price">$1,420/mo</div>
       </div>
-      <div class="meta">Lusk District Boise &middot; 2 bd / 2 ba &middot; craigslist</div>
+      <div class="meta">Lusk District Boise &middot; 2 bd / 1 ba &middot; craigslist</div>
+      <div class="why">Exact neighborhood match, cats explicitly ok</div>
+      <div class="badges"></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-modern-renovations-urban-location/pkaP5kQdbYw3fHSkE7nRwx" target="_blank" rel="noopener">Modern renovations. Urban Location. Now Offering Reduced Rents.</a></div>
+        <div class="price">$1,450/mo</div>
+      </div>
+      <div class="meta">West Bench &middot; 2 bd / 2 ba &middot; craigslist</div>
       <div class="why">Exact neighborhood match, cats explicitly ok</div>
       <div class="badges"></div>
     </div>
@@ -628,26 +657,6 @@ footer {
         <div class="price">$1,245/mo</div>
       </div>
       <div class="meta">Boise Bench &middot; 2 bd / 2 ba &middot; craigslist</div>
-      <div class="why">Exact neighborhood match, cats explicitly ok</div>
-      <div class="badges"></div>
-    </div>
-    
-    <div class="card">
-      <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-modern-renovations-urban-location/pkaP5kQdbYw3fHSkE7nRwx" target="_blank" rel="noopener">Modern renovations. Urban Location. Now Offering Reduced Rents.</a></div>
-        <div class="price">$1,450/mo</div>
-      </div>
-      <div class="meta">West Bench &middot; 2 bd / 2 ba &middot; craigslist</div>
-      <div class="why">Exact neighborhood match, cats explicitly ok</div>
-      <div class="badges"></div>
-    </div>
-    
-    <div class="card">
-      <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-cooling-patio-stainless-steel/8aMy3Uatfhdydjfq3DP84R" target="_blank" rel="noopener">Cooling, Patio, Stainless Steel Oven, Stainless Steel Refrigerator</a></div>
-        <div class="price">$1,280/mo</div>
-      </div>
-      <div class="meta">North End Boise &middot; 2 bd / 1 ba &middot; craigslist</div>
       <div class="why">Exact neighborhood match, cats explicitly ok</div>
       <div class="badges"></div>
     </div>
@@ -684,6 +693,16 @@ footer {
     
     <div class="card">
       <div class="card-top">
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-unbeatable-br-townhome-pool-bbqs/t6UJq1f2JfDBdMA9day3Yb" target="_blank" rel="noopener">Unbeatable 2 BR Townhome w/ Pool &amp; BBQs</a></div>
+        <div class="price">$1,410/mo</div>
+      </div>
+      <div class="meta">Boise Bench &middot; 1 bd / 1 ba &middot; craigslist</div>
+      <div class="why">Exact neighborhood match, cats explicitly ok</div>
+      <div class="badges"></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-top">
         <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-pet-friendly-heating-high-speed/5xcxuqnias7tjhh8i4NmzN" target="_blank" rel="noopener">Pet Friendly, Heating, High Speed Internet Access, Smoke Free</a></div>
         <div class="price">$1,445/mo</div>
       </div>
@@ -694,20 +713,20 @@ footer {
     
     <div class="card">
       <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-travel-nurses-dream-minutes-from/nPoHceCp6KM9F4FPXHtBbX" target="_blank" rel="noopener">A Travel Nurse&#x27;s Dream, Minutes from Saint Alphonsus</a></div>
-        <div class="price">$1,450/mo</div>
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-exclusive-br-ba-with-dishwasher/x7yz1X8Apf3ewgNqJaV3nG" target="_blank" rel="noopener">Exclusive 2 BR/1 BA with Dishwasher &amp; Quiet Neighborhood</a></div>
+        <div class="price">$1,600/mo</div>
       </div>
-      <div class="meta">West Bench &middot; 1 bd / 1 ba &middot; craigslist</div>
+      <div class="meta">Boise, Idaho &middot; 2 bd / 1 ba &middot; craigslist</div>
       <div class="why">Exact neighborhood match, cats explicitly ok</div>
       <div class="badges"></div>
     </div>
     
     <div class="card">
       <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-exclusive-br-ba-with-dishwasher/x7yz1X8Apf3ewgNqJaV3nG" target="_blank" rel="noopener">Exclusive 2 BR/1 BA with Dishwasher &amp; Quiet Neighborhood</a></div>
-        <div class="price">$1,600/mo</div>
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-travel-nurses-dream-minutes-from/nPoHceCp6KM9F4FPXHtBbX" target="_blank" rel="noopener">A Travel Nurse&#x27;s Dream, Minutes from Saint Alphonsus</a></div>
+        <div class="price">$1,450/mo</div>
       </div>
-      <div class="meta">Boise, Idaho &middot; 2 bd / 1 ba &middot; craigslist</div>
+      <div class="meta">West Bench &middot; 1 bd / 1 ba &middot; craigslist</div>
       <div class="why">Exact neighborhood match, cats explicitly ok</div>
       <div class="badges"></div>
     </div>
@@ -744,20 +763,20 @@ footer {
     
     <div class="card">
       <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-the-lifestyle-you-deserve-at/6MLA3QsHcPKg884Qrssxee" target="_blank" rel="noopener">The Lifestyle You Deserve at Boise&#x27;s Central Pointe!</a></div>
-        <div class="price">$1,450/mo</div>
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-views-of-ann-morrison-park-and/1ym1CUThuduuRuYjtQeJJz" target="_blank" rel="noopener">Views of Ann Morrison Park and Boise River, Upgraded Features</a></div>
+        <div class="price">$1,420/mo</div>
       </div>
-      <div class="meta">West Bench &middot; 1 bd / 1 ba &middot; craigslist</div>
+      <div class="meta">Lusk District Boise &middot; 1 bd / 1 ba &middot; craigslist</div>
       <div class="why">Exact neighborhood match, cats explicitly ok</div>
       <div class="badges"></div>
     </div>
     
     <div class="card">
       <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-views-of-ann-morrison-park-and/1ym1CUThuduuRuYjtQeJJz" target="_blank" rel="noopener">Views of Ann Morrison Park and Boise River, Upgraded Features</a></div>
-        <div class="price">$1,420/mo</div>
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-the-lifestyle-you-deserve-at/6MLA3QsHcPKg884Qrssxee" target="_blank" rel="noopener">The Lifestyle You Deserve at Boise&#x27;s Central Pointe!</a></div>
+        <div class="price">$1,450/mo</div>
       </div>
-      <div class="meta">Lusk District Boise &middot; 1 bd / 1 ba &middot; craigslist</div>
+      <div class="meta">West Bench &middot; 1 bd / 1 ba &middot; craigslist</div>
       <div class="why">Exact neighborhood match, cats explicitly ok</div>
       <div class="badges"></div>
     </div>
@@ -784,6 +803,16 @@ footer {
     
     <div class="card">
       <div class="card-top">
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-patio-heating-professional/vyr9fmojLgTtMSEkZgXNC2" target="_blank" rel="noopener">Patio, Heating, Professional Leasing Staff, Pet Friendly</a></div>
+        <div class="price">$1,280/mo</div>
+      </div>
+      <div class="meta">North End Boise &middot; 1 bd / 1 ba &middot; craigslist</div>
+      <div class="why">Exact neighborhood match, cats explicitly ok</div>
+      <div class="badges"></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-top">
         <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-captivating-br-full-size-linen/inj8HdLQEMDk7EyTpnbVKb" target="_blank" rel="noopener">Captivating 2 BR w/ Full-size Linen Closets &amp; BBQs</a></div>
         <div class="price">$1,410/mo</div>
       </div>
@@ -794,20 +823,20 @@ footer {
     
     <div class="card">
       <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-modern-townhome-with-two-master/6TicGv8uZCbQYpLg1qgdK1" target="_blank" rel="noopener">Modern Townhome with Two Master Suites!</a></div>
-        <div class="price">$1,595/mo</div>
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-vinyl-plank-flooring-private/2efxbguVkHmuhnG4YabJ8q" target="_blank" rel="noopener">Vinyl plank flooring, Private patios, Close to local breweries</a></div>
+        <div class="price">$1,425/mo</div>
       </div>
-      <div class="meta">8759 W Pocono St. - Garden City &middot; 1 bd / 1 ba &middot; craigslist</div>
+      <div class="meta">509 South13th street Boise ID 83702 &middot; 2 bd / 1 ba &middot; craigslist</div>
       <div class="why">Exact neighborhood match, cats explicitly ok</div>
       <div class="badges"></div>
     </div>
     
     <div class="card">
       <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-vinyl-plank-flooring-private/2efxbguVkHmuhnG4YabJ8q" target="_blank" rel="noopener">Vinyl plank flooring, Private patios, Close to local breweries</a></div>
-        <div class="price">$1,425/mo</div>
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-modern-townhome-with-two-master/6TicGv8uZCbQYpLg1qgdK1" target="_blank" rel="noopener">Modern Townhome with Two Master Suites!</a></div>
+        <div class="price">$1,595/mo</div>
       </div>
-      <div class="meta">509 South13th street Boise ID 83702 &middot; 2 bd / 1 ba &middot; craigslist</div>
+      <div class="meta">8759 W Pocono St. - Garden City &middot; 1 bd / 1 ba &middot; craigslist</div>
       <div class="why">Exact neighborhood match, cats explicitly ok</div>
       <div class="badges"></div>
     </div>
@@ -928,16 +957,6 @@ footer {
         <div class="price">$1,345/mo</div>
       </div>
       <div class="meta">8137 Bobran St - Boise &middot; 1 bd / 1 ba &middot; craigslist</div>
-      <div class="why">Exact neighborhood match, cats explicitly ok</div>
-      <div class="badges"></div>
-    </div>
-    
-    <div class="card">
-      <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-effortless-commute-from-central/asoNra8XbGFBZSsWKY3GdC" target="_blank" rel="noopener">Effortless Commute from Central Bench, 2 BR Available</a></div>
-        <div class="price">$1,255/mo</div>
-      </div>
-      <div class="meta">Boise Bench &middot; 1 bd / 1 ba &middot; craigslist</div>
       <div class="why">Exact neighborhood match, cats explicitly ok</div>
       <div class="badges"></div>
     </div>
@@ -1184,20 +1203,20 @@ footer {
     
     <div class="card">
       <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/nampa-get-ready-to-come-home-to/hhojB3TXEw2ZnV8kEJ29rK" target="_blank" rel="noopener">Get Ready to Come Home to Clearwater Heights!</a></div>
-        <div class="price">$1,495/mo</div>
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/mccall-brand-new-luxury-apartment-in/c3KBYqvy2tCJsv6NqTiNgF" target="_blank" rel="noopener">Brand New Luxury Apartment in Beautiful Cascade, Idaho!</a></div>
+        <div class="price">$1,150/mo</div>
       </div>
-      <div class="meta">Nampa &middot; 2 bd / 1 ba &middot; craigslist</div>
+      <div class="meta">McCall &middot; 2 bd / 1 ba &middot; craigslist</div>
       <div class="why">Cats explicitly ok</div>
       <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
     </div>
     
     <div class="card">
       <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/mccall-brand-new-luxury-apartment-in/c3KBYqvy2tCJsv6NqTiNgF" target="_blank" rel="noopener">Brand New Luxury Apartment in Beautiful Cascade, Idaho!</a></div>
-        <div class="price">$1,150/mo</div>
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/nampa-get-ready-to-come-home-to/hhojB3TXEw2ZnV8kEJ29rK" target="_blank" rel="noopener">Get Ready to Come Home to Clearwater Heights!</a></div>
+        <div class="price">$1,495/mo</div>
       </div>
-      <div class="meta">McCall &middot; 2 bd / 1 ba &middot; craigslist</div>
+      <div class="meta">Nampa &middot; 2 bd / 1 ba &middot; craigslist</div>
       <div class="why">Cats explicitly ok</div>
       <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
     </div>
@@ -1218,6 +1237,26 @@ footer {
         <div class="price">$1,435/mo</div>
       </div>
       <div class="meta">Eagle &middot; 2 bd / 2 ba &middot; craigslist</div>
+      <div class="why">Cats explicitly ok</div>
+      <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-charming-bedroom-with-updated/qm8gub77CG9DpKDFiQKBVg" target="_blank" rel="noopener">Charming 1 Bedroom with Updated Counters &amp; Faux Wood Floors!</a></div>
+        <div class="price">$1,485/mo</div>
+      </div>
+      <div class="meta">Boise &middot; 2 bd / 1 ba &middot; craigslist</div>
+      <div class="why">Cats explicitly ok</div>
+      <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-laundry-facility-clubhouse-walk/9QoEsFPXrzuQDqy4u1X1vP" target="_blank" rel="noopener">Laundry Facility, Clubhouse, Walk-In Closets, In Home W/D</a></div>
+        <div class="price">$1,585/mo</div>
+      </div>
+      <div class="meta">Located in the heart of a residential neighborhood in B &middot; 1 bd / 1 ba &middot; craigslist</div>
       <div class="why">Cats explicitly ok</div>
       <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
     </div>
@@ -1254,50 +1293,10 @@ footer {
     
     <div class="card">
       <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-charming-bedroom-with-updated/qm8gub77CG9DpKDFiQKBVg" target="_blank" rel="noopener">Charming 1 Bedroom with Updated Counters &amp; Faux Wood Floors!</a></div>
-        <div class="price">$1,485/mo</div>
-      </div>
-      <div class="meta">Boise &middot; 2 bd / 1 ba &middot; craigslist</div>
-      <div class="why">Cats explicitly ok</div>
-      <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
-    </div>
-    
-    <div class="card">
-      <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-laundry-facility-clubhouse-walk/9QoEsFPXrzuQDqy4u1X1vP" target="_blank" rel="noopener">Laundry Facility, Clubhouse, Walk-In Closets, In Home W/D</a></div>
-        <div class="price">$1,585/mo</div>
-      </div>
-      <div class="meta">Located in the heart of a residential neighborhood in B &middot; 1 bd / 1 ba &middot; craigslist</div>
-      <div class="why">Cats explicitly ok</div>
-      <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
-    </div>
-    
-    <div class="card">
-      <div class="card-top">
         <div class="card-title"><a href="https://www.craigslist.org/view/d/nampa-2bd-2ba-nampa-apartment-with/pNyyyNZuUWpWGWa5rM6yHb" target="_blank" rel="noopener">2bd/2ba Nampa Apartment with Carport</a></div>
         <div class="price">$1,350/mo</div>
       </div>
-      <div class="meta">1017 S Locust St #104 - Nampa &middot; 2 bd / 2 ba &middot; craigslist</div>
-      <div class="why">Cats explicitly ok</div>
-      <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
-    </div>
-    
-    <div class="card">
-      <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/meridian-rare-opportunity-br-ba-home/jTFGufL2vkpFvJLv1zPUd3" target="_blank" rel="noopener">Rare Opportunity: 1 BR/1 BA Home with Playground Access</a></div>
-        <div class="price">$1,595/mo</div>
-      </div>
-      <div class="meta">Meridian &middot; 1 bd / 1 ba &middot; craigslist</div>
-      <div class="why">Cats explicitly ok</div>
-      <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
-    </div>
-    
-    <div class="card">
-      <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-lush-courtyards-vinyl-plank/vRZdZrzQYgot1rttM7vLwt" target="_blank" rel="noopener">Lush Courtyards, Vinyl Plank Flooring, W/D Hook Ups, Laundry Facility</a></div>
-        <div class="price">$1,585/mo</div>
-      </div>
-      <div class="meta">Located in the heart of a residential neighborhood in B &middot; 1 bd / 1 ba &middot; craigslist</div>
+      <div class="meta">1017 S Locust St #104 - Nampa &middot; 2 bd / 1 ba &middot; craigslist</div>
       <div class="why">Cats explicitly ok</div>
       <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
     </div>
@@ -1314,17 +1313,17 @@ footer {
     
     <div class="card">
       <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/caldwell-daylight-basement-1bd-duplex/8JLFZaE4ae97nyTsARUwya" target="_blank" rel="noopener">Daylight Basement 1bd Duplex in Caldwell</a></div>
-        <div class="price">$1,295/mo</div>
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/meridian-rare-opportunity-br-ba-home/jTFGufL2vkpFvJLv1zPUd3" target="_blank" rel="noopener">Rare Opportunity: 1 BR/1 BA Home with Playground Access</a></div>
+        <div class="price">$1,595/mo</div>
       </div>
-      <div class="meta">1920 Cleveland Blvd - Caldwell &middot; 2 bd / 1 ba &middot; craigslist</div>
+      <div class="meta">Meridian &middot; 1 bd / 1 ba &middot; craigslist</div>
       <div class="why">Cats explicitly ok</div>
       <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
     </div>
     
     <div class="card">
       <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-walk-in-closets-in-home-d-kitchen/oV5BFEMjs2dkMUSEVM8BKy" target="_blank" rel="noopener">Walk-In Closets, In Home W/D, Kitchen Appliances Included</a></div>
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-lush-courtyards-vinyl-plank/vRZdZrzQYgot1rttM7vLwt" target="_blank" rel="noopener">Lush Courtyards, Vinyl Plank Flooring, W/D Hook Ups, Laundry Facility</a></div>
         <div class="price">$1,585/mo</div>
       </div>
       <div class="meta">Located in the heart of a residential neighborhood in B &middot; 1 bd / 1 ba &middot; craigslist</div>
@@ -1374,12 +1373,32 @@ footer {
     
     <div class="card">
       <div class="card-top">
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/caldwell-daylight-basement-1bd-duplex/8JLFZaE4ae97nyTsARUwya" target="_blank" rel="noopener">Daylight Basement 1bd Duplex in Caldwell</a></div>
+        <div class="price">$1,295/mo</div>
+      </div>
+      <div class="meta">1920 Cleveland Blvd - Caldwell &middot; 2 bd / 1 ba &middot; craigslist</div>
+      <div class="why">Cats explicitly ok</div>
+      <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-top">
         <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-exceptional-living-close-to/e4Wv7gFCS4mLPzkGadnN39" target="_blank" rel="noopener">Exceptional Living Close to Whitewater Par</a></div>
         <div class="price">$1,425/mo</div>
       </div>
       <div class="meta">847 N Driscoll Ln #102 - Boise &middot; 2 bd / 2 ba &middot; craigslist</div>
       <div class="why">Exact neighborhood match, cats explicitly ok</div>
       <div class="badges"></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-walk-in-closets-in-home-d-kitchen/oV5BFEMjs2dkMUSEVM8BKy" target="_blank" rel="noopener">Walk-In Closets, In Home W/D, Kitchen Appliances Included</a></div>
+        <div class="price">$1,585/mo</div>
+      </div>
+      <div class="meta">Located in the heart of a residential neighborhood in B &middot; 1 bd / 1 ba &middot; craigslist</div>
+      <div class="why">Cats explicitly ok</div>
+      <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
     </div>
     
     <div class="card">
@@ -1394,22 +1413,22 @@ footer {
     
     <div class="card">
       <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-upgraded-features-bike-score-94/w7jpsUpDBduXxieGoJceeQ" target="_blank" rel="noopener">Upgraded Features, Bike score 94, Located in the Lusk District</a></div>
-        <div class="price">$1,420/mo</div>
-      </div>
-      <div class="meta">Lusk District Boise &middot; 1 bd / 1 ba &middot; craigslist</div>
-      <div class="why">Cats explicitly ok</div>
-      <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
-    </div>
-    
-    <div class="card">
-      <div class="card-top">
         <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-bdrm-carport-north-end-townhome/sFQAjgBrAgXPySwjV9Hved" target="_blank" rel="noopener">1 Bdrm w/ Carport North End Townhome by Elm Grove Park &amp; Foothills</a></div>
         <div class="price">$1,400/mo</div>
       </div>
       <div class="meta">BOISE NORTH END &middot; 2 bd / 1 ba &middot; craigslist</div>
       <div class="why">Exact neighborhood match, cats explicitly ok</div>
       <div class="badges"></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-upgraded-features-bike-score-94/w7jpsUpDBduXxieGoJceeQ" target="_blank" rel="noopener">Upgraded Features, Bike score 94, Located in the Lusk District</a></div>
+        <div class="price">$1,420/mo</div>
+      </div>
+      <div class="meta">Lusk District Boise &middot; 1 bd / 1 ba &middot; craigslist</div>
+      <div class="why">Cats explicitly ok</div>
+      <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
     </div>
     
     <div class="card">
@@ -1430,6 +1449,16 @@ footer {
       <div class="meta">Caldwell, ID &middot; 2 bd / 1 ba &middot; craigslist</div>
       <div class="why">Cats explicitly ok</div>
       <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-fitness-center-on-site-views-of/7r962rZVo2sMxKRCMTjCsZ" target="_blank" rel="noopener">Fitness Center On-Site, Views of Ann Morrison Park and Boise River</a></div>
+        <div class="price">$1,280/mo</div>
+      </div>
+      <div class="meta">Lusk District Boise &middot; 2 bd / 2 ba &middot; craigslist</div>
+      <div class="why">Exact neighborhood match, cats explicitly ok</div>
+      <div class="badges"></div>
     </div>
     
     <div class="card">
@@ -1474,10 +1503,10 @@ footer {
     
     <div class="card">
       <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-fitness-center-on-site-views-of/7r962rZVo2sMxKRCMTjCsZ" target="_blank" rel="noopener">Fitness Center On-Site, Views of Ann Morrison Park and Boise River</a></div>
-        <div class="price">$1,280/mo</div>
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-2bed-townhome-in-se-boise-with/kHww1Lx651ahtZ8i6eeQUo" target="_blank" rel="noopener">2Bed Townhome in SE Boise With Covered Parking</a></div>
+        <div class="price">$1,245/mo</div>
       </div>
-      <div class="meta">Lusk District Boise &middot; 2 bd / 2 ba &middot; craigslist</div>
+      <div class="meta">Boise &middot; 2 bd / 1 ba &middot; craigslist</div>
       <div class="why">Exact neighborhood match, cats explicitly ok</div>
       <div class="badges"></div>
     </div>
@@ -1504,16 +1533,6 @@ footer {
     
     <div class="card">
       <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-extra-storage-quiet-place-in-the/2qgo1x5bb1eeGPBdg1jyC2" target="_blank" rel="noopener">Extra Storage, Quiet Place in the Heart of Eagle, Breakfast Bar</a></div>
-        <div class="price">$1,435/mo</div>
-      </div>
-      <div class="meta">Eagle &middot; 2 bd / 2 ba &middot; craigslist</div>
-      <div class="why">Cats explicitly ok</div>
-      <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
-    </div>
-    
-    <div class="card">
-      <div class="card-top">
         <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-access-to-local-trails-for-biking/gypmQNobc98GSnEnrQbYJK" target="_blank" rel="noopener">Access to Local Trails for Biking, Hiking, and Walking, A Must See</a></div>
         <div class="price">$1,455/mo</div>
       </div>
@@ -1524,8 +1543,18 @@ footer {
     
     <div class="card">
       <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-2bed-townhome-in-se-boise-with/kHww1Lx651ahtZ8i6eeQUo" target="_blank" rel="noopener">2Bed Townhome in SE Boise With Covered Parking</a></div>
-        <div class="price">$1,245/mo</div>
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-extra-storage-quiet-place-in-the/2qgo1x5bb1eeGPBdg1jyC2" target="_blank" rel="noopener">Extra Storage, Quiet Place in the Heart of Eagle, Breakfast Bar</a></div>
+        <div class="price">$1,435/mo</div>
+      </div>
+      <div class="meta">Eagle &middot; 2 bd / 2 ba &middot; craigslist</div>
+      <div class="why">Cats explicitly ok</div>
+      <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-spacious-two-bedroom-one-bath/8qsFMjKEpdaFhc7ucjPHe5" target="_blank" rel="noopener">Spacious Two Bedroom, One Bath Unit at Raymond Street Apartments in Boise</a></div>
+        <div class="price">$1,150/mo</div>
       </div>
       <div class="meta">Boise &middot; 2 bd / 1 ba &middot; craigslist</div>
       <div class="why">Exact neighborhood match, cats explicitly ok</div>
@@ -1554,8 +1583,8 @@ footer {
     
     <div class="card">
       <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-spacious-two-bedroom-one-bath/8qsFMjKEpdaFhc7ucjPHe5" target="_blank" rel="noopener">Spacious Two Bedroom, One Bath Unit at Raymond Street Apartments in Boise</a></div>
-        <div class="price">$1,150/mo</div>
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-great-bedroom-in-the-crescent-rim/8GUvqz6fXBEp1ZKjCyF9qZ" target="_blank" rel="noopener">Great 2 bedroom in the crescent rim area of boise with W/D in unit</a></div>
+        <div class="price">$1,125/mo</div>
       </div>
       <div class="meta">Boise &middot; 2 bd / 1 ba &middot; craigslist</div>
       <div class="why">Exact neighborhood match, cats explicitly ok</div>
@@ -1584,30 +1613,10 @@ footer {
     
     <div class="card">
       <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-great-bedroom-in-the-crescent-rim/8GUvqz6fXBEp1ZKjCyF9qZ" target="_blank" rel="noopener">Great 2 bedroom in the crescent rim area of boise with W/D in unit</a></div>
-        <div class="price">$1,125/mo</div>
-      </div>
-      <div class="meta">Boise &middot; 2 bd / 1 ba &middot; craigslist</div>
-      <div class="why">Exact neighborhood match, cats explicitly ok</div>
-      <div class="badges"></div>
-    </div>
-    
-    <div class="card">
-      <div class="card-top">
         <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-dog-park-great-local-schools/cmMurnc8dkz4V95q4TaZyn" target="_blank" rel="noopener">Dog Park, Great Local Schools, Covered Carports</a></div>
         <div class="price">$1,435/mo</div>
       </div>
       <div class="meta">Eagle &middot; 1 bd / 1 ba &middot; craigslist</div>
-      <div class="why">Cats explicitly ok</div>
-      <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
-    </div>
-    
-    <div class="card">
-      <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-unbeatable-br-ba-retreat-with/iz1J4AEptRzh96TAipyk9u" target="_blank" rel="noopener">Unbeatable 1 BR/1 BA Retreat with Granite Countertops</a></div>
-        <div class="price">$1,425/mo</div>
-      </div>
-      <div class="meta">Boise, Idaho &middot; 2 bd / 1 ba &middot; craigslist</div>
       <div class="why">Cats explicitly ok</div>
       <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
     </div>
@@ -1624,31 +1633,21 @@ footer {
     
     <div class="card">
       <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/meridian-convineint-location-great/ctBRX8gmgX49ypPiakCrtm" target="_blank" rel="noopener">Convineint Location, Great Living - Apply Today!</a></div>
-        <div class="price">$1,525/mo</div>
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-unbeatable-br-ba-retreat-with/iz1J4AEptRzh96TAipyk9u" target="_blank" rel="noopener">Unbeatable 1 BR/1 BA Retreat with Granite Countertops</a></div>
+        <div class="price">$1,425/mo</div>
       </div>
-      <div class="meta">Meridian &middot; 2 bd / 1 ba &middot; craigslist</div>
-      <div class="why">Scored 43.9 on price/area/timing</div>
-      <div class="badges"><span class="badge warn">pet policy unclear — confirm cats allowed before contacting</span><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
-    </div>
-    
-    <div class="card">
-      <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/caldwell-1bd-duplex-in-great-caldwell/3WKdcokN5rcQe6su4a5af4" target="_blank" rel="noopener">1bd Duplex in Great Caldwell Location</a></div>
-        <div class="price">$1,295/mo</div>
-      </div>
-      <div class="meta">1920 Cleveland Blvd - Caldwell &middot; 1 bd / 1 ba &middot; craigslist</div>
+      <div class="meta">Boise, Idaho &middot; 2 bd / 1 ba &middot; craigslist</div>
       <div class="why">Cats explicitly ok</div>
       <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
     </div>
     
     <div class="card">
       <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-sycamore-commons-bedroom-units/budqE62N1UmEMo7jZDviki" target="_blank" rel="noopener">Sycamore Commons - 1 Bedroom Units Available ($1000 Visa Gift Card)</a></div>
-        <div class="price">$1,520/mo</div>
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/meridian-convineint-location-great/ctBRX8gmgX49ypPiakCrtm" target="_blank" rel="noopener">Convineint Location, Great Living - Apply Today!</a></div>
+        <div class="price">$1,525/mo</div>
       </div>
-      <div class="meta">Boise &middot; 2 bd / 1 ba &middot; craigslist</div>
-      <div class="why">Scored 43.7 on price/area/timing</div>
+      <div class="meta">Meridian &middot; 2 bd / 1 ba &middot; craigslist</div>
+      <div class="why">Scored 43.6 on price/area/timing</div>
       <div class="badges"><span class="badge warn">pet policy unclear — confirm cats allowed before contacting</span><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
     </div>
     
@@ -1684,6 +1683,26 @@ footer {
     
     <div class="card">
       <div class="card-top">
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/caldwell-1bd-duplex-in-great-caldwell/3WKdcokN5rcQe6su4a5af4" target="_blank" rel="noopener">1bd Duplex in Great Caldwell Location</a></div>
+        <div class="price">$1,295/mo</div>
+      </div>
+      <div class="meta">1920 Cleveland Blvd - Caldwell &middot; 1 bd / 1 ba &middot; craigslist</div>
+      <div class="why">Cats explicitly ok</div>
+      <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-sycamore-commons-bedroom-units/budqE62N1UmEMo7jZDviki" target="_blank" rel="noopener">Sycamore Commons - 1 Bedroom Units Available ($1000 Visa Gift Card)</a></div>
+        <div class="price">$1,520/mo</div>
+      </div>
+      <div class="meta">Boise &middot; 2 bd / 1 ba &middot; craigslist</div>
+      <div class="why">Scored 43.5 on price/area/timing</div>
+      <div class="badges"><span class="badge warn">pet policy unclear — confirm cats allowed before contacting</span><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-top">
         <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-pet-friendly-community-private/pbaQ2R6cqBK7WuCUQn9rWo" target="_blank" rel="noopener">Pet Friendly Community, Private Decks &amp; Patios, New Countertops</a></div>
         <div class="price">$1,305/mo</div>
       </div>
@@ -1694,20 +1713,20 @@ footer {
     
     <div class="card">
       <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/caldwell-laundry-facility-full-kitchen/4u6bru5Rvzc6TMakt9KCRX" target="_blank" rel="noopener">Laundry Facility, Full Kitchen Appliance Package</a></div>
-        <div class="price">$922/mo</div>
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-rare-opportunity-br-ba-with-air/5VSdCzZwtGnbc1S3CrwgZW" target="_blank" rel="noopener">Rare Opportunity! 1 BR/1 BA with Air Conditioning</a></div>
+        <div class="price">$1,425/mo</div>
       </div>
-      <div class="meta">Caldwell, ID &middot; 1 bd / 1 ba &middot; craigslist</div>
+      <div class="meta">Boise, Idaho &middot; 2 bd / 1 ba &middot; craigslist</div>
       <div class="why">Cats explicitly ok</div>
       <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
     </div>
     
     <div class="card">
       <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-rare-opportunity-br-ba-with-air/5VSdCzZwtGnbc1S3CrwgZW" target="_blank" rel="noopener">Rare Opportunity! 1 BR/1 BA with Air Conditioning</a></div>
-        <div class="price">$1,425/mo</div>
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/caldwell-laundry-facility-full-kitchen/4u6bru5Rvzc6TMakt9KCRX" target="_blank" rel="noopener">Laundry Facility, Full Kitchen Appliance Package</a></div>
+        <div class="price">$922/mo</div>
       </div>
-      <div class="meta">Boise, Idaho &middot; 2 bd / 1 ba &middot; craigslist</div>
+      <div class="meta">Caldwell, ID &middot; 1 bd / 1 ba &middot; craigslist</div>
       <div class="why">Cats explicitly ok</div>
       <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
     </div>
@@ -1784,22 +1803,22 @@ footer {
     
     <div class="card">
       <div class="card-top">
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/nampa-everything-you-need-all-right/ax2Y8NEwnU1PCDsTyDTzgM" target="_blank" rel="noopener">Everything You Need, All Right Here! Apply Today!</a></div>
+        <div class="price">$1,295/mo</div>
+      </div>
+      <div class="meta">Nampa &middot; 2 bd / 2 ba &middot; craigslist</div>
+      <div class="why">Scored 41.5 on price/area/timing</div>
+      <div class="badges"><span class="badge warn">pet policy unclear — confirm cats allowed before contacting</span><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-top">
         <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-captivating-br-ba-with-granite/2nTQehrwohEMVH7knSNC1j" target="_blank" rel="noopener">Captivating 1 BR/1 BA with Granite Countertops &amp; Playground Fun</a></div>
         <div class="price">$1,425/mo</div>
       </div>
       <div class="meta">Boise, Idaho &middot; 1 bd / 1 ba &middot; craigslist</div>
       <div class="why">Cats explicitly ok</div>
       <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
-    </div>
-    
-    <div class="card">
-      <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/nampa-everything-you-need-all-right/ax2Y8NEwnU1PCDsTyDTzgM" target="_blank" rel="noopener">Everything You Need, All Right Here! Apply Today!</a></div>
-        <div class="price">$1,295/mo</div>
-      </div>
-      <div class="meta">Nampa &middot; 2 bd / 2 ba &middot; craigslist</div>
-      <div class="why">Scored 41.7 on price/area/timing</div>
-      <div class="badges"><span class="badge warn">pet policy unclear — confirm cats allowed before contacting</span><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
     </div>
     
     <div class="card">
@@ -1818,7 +1837,7 @@ footer {
         <div class="price">$1,175/mo</div>
       </div>
       <div class="meta">Nampa &middot; 2 bd / 1 ba &middot; craigslist</div>
-      <div class="why">Scored 40.6 on price/area/timing</div>
+      <div class="why">Scored 40.4 on price/area/timing</div>
       <div class="badges"><span class="badge warn">pet policy unclear — confirm cats allowed before contacting</span><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
     </div>
     
@@ -1898,7 +1917,7 @@ footer {
         <div class="price">$847/mo</div>
       </div>
       <div class="meta">Meridian &middot; 1 bd / 1 ba &middot; craigslist</div>
-      <div class="why">Scored 34.5 on price/area/timing</div>
+      <div class="why">Scored 34.3 on price/area/timing</div>
       <div class="badges"><span class="badge warn">pet policy unclear — confirm cats allowed before contacting</span><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
     </div>
     
@@ -1958,8 +1977,18 @@ footer {
         <div class="price">$995/mo</div>
       </div>
       <div class="meta">Boise &middot; 1 bd / 1 ba &middot; craigslist</div>
-      <div class="why">Scored 33.9 on price/area/timing</div>
+      <div class="why">Scored 33.7 on price/area/timing</div>
       <div class="badges"><span class="badge warn">pet policy unclear — confirm cats allowed before contacting</span><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/nampa-popular-2bd-2b-nampa-apartment/ajQKhQtPqCv63hfMk8GmSM" target="_blank" rel="noopener">Popular 2bd/2b Nampa Apartment - Easy Access to Everything!</a></div>
+        <div class="price">$1,395/mo</div>
+      </div>
+      <div class="meta">1805 W Bella Lane #4 - Nampa &middot; 2 bd / 1 ba &middot; craigslist</div>
+      <div class="why">Cats explicitly ok</div>
+      <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
     </div>
     
     <div class="card">
@@ -2074,16 +2103,6 @@ footer {
     
     <div class="card">
       <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/nampa-stylish-one-bedroom-retreat/hXQVjHJJvSMYs5ePzYLS21" target="_blank" rel="noopener">A Stylish One-Bedroom Retreat Designed for Easy Living! J/221-204</a></div>
-        <div class="price">$1,399/mo</div>
-      </div>
-      <div class="meta">Nampa &middot; 2 bd / 2 ba &middot; craigslist</div>
-      <div class="why">Scored 30.8 on price/area/timing</div>
-      <div class="badges"><span class="badge warn">pet policy unclear — confirm cats allowed before contacting</span><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
-    </div>
-    
-    <div class="card">
-      <div class="card-top">
         <div class="card-title"><a href="https://www.craigslist.org/view/d/nampa-10th-ave-2a/ntavYFT2tN9ps24y6TSY3P" target="_blank" rel="noopener">15913 S. 10th Ave #2A</a></div>
         <div class="price">$1,150/mo</div>
       </div>
@@ -2094,12 +2113,12 @@ footer {
     
     <div class="card">
       <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/nampa-popular-nampa-western-village/q8p21qPcQWxhngAwXieXz5" target="_blank" rel="noopener">Popular Nampa Western Village Apartments</a></div>
-        <div class="price">$1,125/mo</div>
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/nampa-stylish-one-bedroom-retreat/hXQVjHJJvSMYs5ePzYLS21" target="_blank" rel="noopener">A Stylish One-Bedroom Retreat Designed for Easy Living! J/221-204</a></div>
+        <div class="price">$1,399/mo</div>
       </div>
-      <div class="meta">1721 S Juniper Street #17 - Nampa &middot; 2 bd / 1 ba &middot; craigslist</div>
-      <div class="why">Cats explicitly ok</div>
-      <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
+      <div class="meta">Nampa &middot; 2 bd / 2 ba &middot; craigslist</div>
+      <div class="why">Scored 30.6 on price/area/timing</div>
+      <div class="badges"><span class="badge warn">pet policy unclear — confirm cats allowed before contacting</span><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
     </div>
     
     <div class="card">
@@ -2158,7 +2177,7 @@ footer {
         <div class="price">$1,300/mo</div>
       </div>
       <div class="meta">Nampa &middot; 2 bd / 1 ba &middot; craigslist</div>
-      <div class="why">Scored 28.9 on price/area/timing</div>
+      <div class="why">Scored 28.7 on price/area/timing</div>
       <div class="badges"><span class="badge warn">pet policy unclear — confirm cats allowed before contacting</span><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
     </div>
     
@@ -2168,16 +2187,6 @@ footer {
         <div class="price">$1,420/mo</div>
       </div>
       <div class="meta">Boise &middot; 1 bd / 1 ba &middot; craigslist</div>
-      <div class="why">Cats explicitly ok</div>
-      <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
-    </div>
-    
-    <div class="card">
-      <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/nampa-popular-2bd-2b-nampa-apartment/ajQKhQtPqCv63hfMk8GmSM" target="_blank" rel="noopener">Popular 2bd/2b Nampa Apartment - Easy Access to Everything!</a></div>
-        <div class="price">$1,395/mo</div>
-      </div>
-      <div class="meta">1805 W Bella Lane #4 - Nampa &middot; 1 bd / 1 ba &middot; craigslist</div>
       <div class="why">Cats explicitly ok</div>
       <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
     </div>
@@ -2244,16 +2253,6 @@ footer {
     
     <div class="card">
       <div class="card-top">
-        <div class="card-title"><a href="https://www.craigslist.org/view/d/nampa-newer-apartment-living-with-the/ehrE4bYvX5izKDHEXQ5JM8" target="_blank" rel="noopener">Newer Apartment Living with the Comforts You Deserve! J/221-307</a></div>
-        <div class="price">$1,495/mo</div>
-      </div>
-      <div class="meta">Nampa &middot; 1 bd / 1 ba &middot; craigslist</div>
-      <div class="why">Scored 26.8 on price/area/timing</div>
-      <div class="badges"><span class="badge warn">pet policy unclear — confirm cats allowed before contacting</span><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
-    </div>
-    
-    <div class="card">
-      <div class="card-top">
         <div class="card-title"><a href="https://www.craigslist.org/view/d/caldwell-caldwell-home-coming-soon/pVEYugczQamo57bmptcPDN" target="_blank" rel="noopener">Caldwell Home Coming Soon!</a></div>
         <div class="price">$1,450/mo</div>
       </div>
@@ -2274,6 +2273,16 @@ footer {
     
     <div class="card">
       <div class="card-top">
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/nampa-newer-apartment-living-with-the/ehrE4bYvX5izKDHEXQ5JM8" target="_blank" rel="noopener">Newer Apartment Living with the Comforts You Deserve! J/221-307</a></div>
+        <div class="price">$1,495/mo</div>
+      </div>
+      <div class="meta">Nampa &middot; 1 bd / 1 ba &middot; craigslist</div>
+      <div class="why">Scored 26.5 on price/area/timing</div>
+      <div class="badges"><span class="badge warn">pet policy unclear — confirm cats allowed before contacting</span><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-top">
         <div class="card-title"><a href="https://www.craigslist.org/view/d/boise-modern-downtown-eagle-apartment/2FuDD4SmW758wedooGD28v" target="_blank" rel="noopener">Modern Downtown Eagle Apartment</a></div>
         <div class="price">$1,195/mo</div>
       </div>
@@ -2288,6 +2297,16 @@ footer {
         <div class="price">$1,150/mo</div>
       </div>
       <div class="meta">Boise, ID &middot; 1 bd / 1 ba &middot; craigslist</div>
+      <div class="why">Cats explicitly ok</div>
+      <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
+    </div>
+    
+    <div class="card">
+      <div class="card-top">
+        <div class="card-title"><a href="https://www.craigslist.org/view/d/nampa-popular-nampa-western-village/q8p21qPcQWxhngAwXieXz5" target="_blank" rel="noopener">Popular Nampa Western Village Apartments</a></div>
+        <div class="price">$1,125/mo</div>
+      </div>
+      <div class="meta">1721 S Juniper Street #17 - Nampa &middot; 1 bd / 1 ba &middot; craigslist</div>
       <div class="why">Cats explicitly ok</div>
       <div class="badges"><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
     </div>
@@ -2338,7 +2357,7 @@ footer {
         <div class="price">$847/mo</div>
       </div>
       <div class="meta">Meridian &middot; 2 bd / 2 ba &middot; craigslist</div>
-      <div class="why">Scored 24.7 on price/area/timing</div>
+      <div class="why">Scored 24.5 on price/area/timing</div>
       <div class="badges"><span class="badge warn">pet policy unclear — confirm cats allowed before contacting</span><span class="badge warn">area unconfirmed — verify it&#x27;s Bench/North End/SE Boise/Garden City</span></div>
     </div>
     
@@ -2534,7 +2553,7 @@ footer {
     
 
   <footer>
-    285 listings scanned &middot; last updated Jul 27, 2026 at 1:20 AM UTC &middot; next run tomorrow 8:00am MT
+    286 listings scanned &middot; next run tomorrow 8:00am MT
   </footer>
 </div>
 </body>
