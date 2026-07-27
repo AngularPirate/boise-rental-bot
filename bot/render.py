@@ -2,8 +2,11 @@
 
 import html
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
 
 import config
+
+MOUNTAIN_TZ = ZoneInfo("America/Denver")
 
 STYLE = """
 :root {
@@ -51,6 +54,14 @@ h2 {
 }
 .badge.warn { background: var(--warn-bg); color: var(--warn-ink); }
 .empty { color: var(--ink-soft); font-style: italic; }
+.updated-badge {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  margin-top: 0.7rem; font-size: 0.85rem; color: var(--ink-soft);
+  background: var(--accent-soft); padding: 0.3rem 0.7rem; border-radius: 999px;
+}
+.updated-badge .dot {
+  width: 7px; height: 7px; border-radius: 50%; background: var(--accent);
+}
 footer {
   margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--border);
   color: var(--ink-soft); font-size: 0.85rem;
@@ -121,7 +132,7 @@ def render_dashboard(ranked_listings, scanned_count, now=None):
     contact_today = [listing for listing in ranked_listings if listing["contact_today"]]
     still_live = [listing for listing in ranked_listings if not listing["contact_today"]]
 
-    updated_str = now.strftime("%b %-d, %Y at %-I:%M %p UTC")
+    updated_str = now.astimezone(MOUNTAIN_TZ).strftime("%b %-d, %Y at %-I:%M %p MT")
 
     body = f"""<!doctype html>
 <html lang="en">
@@ -136,13 +147,14 @@ def render_dashboard(ranked_listings, scanned_count, now=None):
   <header>
     <h1>{_esc(config.DASHBOARD_TITLE)}</h1>
     <div class="subtitle">Boise houses, townhomes &amp; condos under ${config.MAX_RENT:,}/mo &middot; cats OK &middot; move-in by {config.MOVE_IN_FALLBACK}</div>
+    <div class="updated-badge"><span class="dot"></span>Updated {updated_str} &middot; refreshes daily at 8am MT</div>
   </header>
 
   {_section_html("Contact Today", contact_today)}
   {_section_html("Still Live", still_live)}
 
   <footer>
-    {scanned_count} listings scanned &middot; last updated {updated_str} &middot; next run tomorrow 8:00am MT
+    {scanned_count} listings scanned &middot; next run tomorrow 8:00am MT
   </footer>
 </div>
 </body>

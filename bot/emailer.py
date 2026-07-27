@@ -89,8 +89,11 @@ def build_email_bodies(ranked_listings, scanned_count, now=None):
 
 
 def send_digest(ranked_listings, scanned_count, now=None):
-    gmail_address = os.environ["GMAIL_ADDRESS"]
-    gmail_app_password = os.environ["GMAIL_APP_PASSWORD"]
+    gmail_address = os.environ["GMAIL_ADDRESS"].strip()
+    # Gmail displays app passwords as 4 space-separated groups for readability;
+    # those spaces (sometimes pasted in as non-breaking spaces, \xa0) aren't part
+    # of the actual credential, so strip all whitespace before using it.
+    gmail_app_password = "".join(os.environ["GMAIL_APP_PASSWORD"].split())
 
     plain_body, html_body = build_email_bodies(ranked_listings, scanned_count, now=now)
 
