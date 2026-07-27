@@ -1,0 +1,1234 @@
+{
+  "seen": {
+    "appfolio:alohapm:659": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1196,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "appfolio:alohapm:686": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1196,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/baker-city-newly-remodeled-duplex-apt-2/rZTNvn72TB2FqSg4AaJV1g": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1499,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-24-hour-fitness-studio-on-site/kBPvsmRVaB5uHDyGEF5PmV": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1278,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-24-hour-fitness-studio-online/nQ6otzimfGQCSjAhpAhp5s": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1378,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-2bed-townhome-in-se-boise-with/kHww1Lx651ahtZ8i6eeQUo": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1245,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-3263-lakegrove-201/mqVdF83e2xBt3qG9GuB2hW": {
+      "first_seen": "2026-07-27T01:20:48.304656+00:00",
+      "last_price": 1325,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-998-phillippi-st/gq27EQi1hvA1bo5hY6e3HK": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1295,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-access-to-local-trails-for-biking/gypmQNobc98GSnEnrQbYJK": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1455,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-adventure-ready-brs-townhomes/2hKfqFck4TBAoQXpWDN6gn": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1565,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-air-conditioning-plus-ceiling/edY7V1f4161rxuNCBU4eqP": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1280,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-bdrm-carport-north-end-townhome/sFQAjgBrAgXPySwjV9Hved": {
+      "first_seen": "2026-07-27T01:20:48.304656+00:00",
+      "last_price": 1400,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-bed-15-bath-great-location/5WabjWiSujW2cxypTS43k8": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1495,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-bed-bath-river-pointe-apartments/7g2uUP7FC5x2ZEFBREaEsR": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1563,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-br-haven-next-to-shopping-dining/aUCsLqyDXP8RqiQYdjDpKU": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1400,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-breakfast-bar-walk-from-downtown/dWBVNHrr3vRCfMDtcNdnod": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1435,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-breathtaking-views-this-2br-2ba/9punhDjRVs5qBu9ANwAsmU": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1150,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-bright-brs-eat-in-kitchens-on/ixNJh8wQVz4pJ8pEKVCfRv": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1565,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-bsu-dorms-who-now-renting-for/gaJALdDE8b6e365aNGgPFY": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1450,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-cable-ready-newly-renovated-lush/gWkpYjdkqjzhkWdvkjWKC8": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1499,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-cable-ready-renovated-laundry/35WrMLASkmNXEsaA27QWUh": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1499,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-cape-style-two-bedrooms/42vPqDY2XEFqU396o1zAWG": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1100,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-captivating-br-ba-with-granite/2nTQehrwohEMVH7knSNC1j": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1425,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-captivating-br-ba-with-granite/o7kz5rQC7Tr8zXCbwc3fKQ": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1600,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-captivating-br-ba-with-playground/pgpK63bXJ8z7NC5HWewMJ4": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1425,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-captivating-br-full-size-linen/inj8HdLQEMDk7EyTpnbVKb": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1410,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-ceiling-fan-picnic-areas-vaulted/nJGMig7T17bHmyVrbHojhC": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1278,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-ceiling-fans-greenbelt-access/aLjQpv3pvpJHxjvLN4yY68": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1195,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-charming-bedroom-with-updated/qm8gub77CG9DpKDFiQKBVg": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1485,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-charming-historic-apartment-in/wSb4hMET2y4BkFySMNyboW": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1275,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-city-sleep-eat-shop-repeat/fK5TqtDL3UF3SfrA465i6B": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1250,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-clubhouse-lush-courtyards-in-home/9mTnuXywCrmuVh3nD1Av6c": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1585,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-clubhouse-lush-courtyards-vinyl/qCCJ5LxePxAA8tWPTxDYVa": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1585,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-co-working-space-fitness-center/db7ijsqDCP37L46kijBpC7": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1455,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-community-room-with-resident/9nrWmV6mVScEs1XQxXhNhX": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1455,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-conference-room-movement-room/3ZppdLfY2xJ2tQwjBA9F7D": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1455,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-cooling-off-street-parking-near/8PJkCQufuaC6p7kW7WijC5": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1240,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-cooling-patio-stainless-steel/8aMy3Uatfhdydjfq3DP84R": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1280,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-cooling-pet-friendly-stainless/vfBHvKcGw14fzxZ2urEXfR": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1240,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-courtyard-four-24-hour-laundry/2dxP9v2CGWQ6BbDDppyvM9": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1450,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-covered-carports-center-of/brw2cDVb1QaMsJajdxwvHK": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1435,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-covered-carports-extra-storage/oCzd2BtUfUyYRQJmAiBf9q": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1435,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-cozy-2bdrm-sw-boise-duplex-with/oWLks9cUFhdpBgY6dbooVD": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1345,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-cozy-br-townhome-pet-stations-on/gEXkyiTtg6CTWidNKK3dSS": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1255,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-cozy-fireplace-balcony-more-in/fvLHZQjrsLbwscgRvsjZgV": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1500,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-dining-room-bedroom-ceiling-fans/6YqKa8ojuk2jmLS95iRjLC": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1305,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-dishwasher-private-patios/ihoimP3UErfDf5X9A2jiRg": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1315,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-dog-park-great-local-schools/cmMurnc8dkz4V95q4TaZyn": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1435,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-effortless-commute-br-townhome/jxPj3hjLpEEDdiE9h1UikT": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1265,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-effortless-commute-br-townhome/s7jYtNfEo5dXYs3gTHhFJB": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1410,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-effortless-commute-from-central/asoNra8XbGFBZSsWKY3GdC": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1255,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-effortless-commute-from-central/eFFCngr1fecb3gSDCqe6RJ": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1265,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-effortless-commute-quiet/pGyoeSA4wS7t6VK78vP1Ei": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1425,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-embrace-coolness-modern-upgrades/eCtfy8TPjV1FZjnBcTh5HB": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1450,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-exceptional-living-close-to/e4Wv7gFCS4mLPzkGadnN39": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1425,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-exclusive-br-ba-haven-with-dual/4uKjbW1DSJYZJ4rv3afpCt": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1600,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-exclusive-br-ba-with-dishwasher/x7yz1X8Apf3ewgNqJaV3nG": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1600,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-extra-parking-available-central/n8YugBunTcb2jGgVhLSqaS": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1499,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-extra-storage-quiet-place-in-the/2qgo1x5bb1eeGPBdg1jyC2": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1435,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-find-your-perfect-space-here/pYMUfYb2owHXzx49VyeaZF": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 995,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-fireplaces-extra-parking/3C6GnKmjQsWPYE46MzJQcK": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1350,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-fireplaces-pet-friendly-community/9xE2LuDdHZCcozarCH3ByG": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1350,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-fireplaces-reserved-covered/reEjV9hZkeJZ44W3sbLJMr": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1595,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-fitness-center-on-site-views-of/7r962rZVo2sMxKRCMTjCsZ": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1280,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-fully-equipped-kitchen-with/agDsL38BFY8z3bSNu4BX7M": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1280,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-fully-equipped-kitchen-with/fraQisKLdQiFoQ7RVBy6NG": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1280,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-fully-equipped-kitchen-with/gYSXE3ZnvuQeK7AoG4i6gC": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1420,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-garbage-disposal-microwave-large/v8SMTqR6ysUxT7Vc6MLLzT": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1378,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-gas-fireplace-online-payment/5EPvvpdvEqx8ooN4ewGQz1": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1278,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-gorgeous-br-townhome-wood/7HaYicvTvahVUu5DxDrN3p": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1265,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-great-bedroom-in-the-crescent-rim/8GUvqz6fXBEp1ZKjCyF9qZ": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1125,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-great-local-schools-spacious/ueZ6hotiseaL7Pp6AfKJpz": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1435,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-greenbelt-access-ceiling-fans/o2paTtXc1fBLuq5SzgLS78": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1425,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-heating-air-conditioning-bbqs/idJ2jZoSMX2vXQaZU4jhiA": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1585,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-high-speed-internet-access/6XzG7AicM2LjQt2PeWkv47": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1445,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-high-speed-internet-access/iMaH9FS8MQwZaVLJtthyok": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1425,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-huge-walk-in-closets-loft/djmUCBSVAPXvQ37qdoPEXd": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1420,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-in-home-d-ceiling-fans-lush/5JHB8tUo6mxuErnBLJ3g7L": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1585,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-individual-leases-available/czLZrNRz1K8yxEK1DAe1yP": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1455,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-interactive-gameroom-co-working/a6qsaB6KW61RJHtrr1wsKF": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1455,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-interactive-gameroom-movement/gawSGozsA2frdbhYsBW4Wa": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1455,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-internet-included-fully-equipped/mVTvk7KENCYbCtUB5jcJw2": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1420,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-inviting-area-stands-offering/eMspiYs2AKoph6a4QMRoGp": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1259,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-inviting-br-with-balcony-wood/sGAP2zLAZEBjb64oQipMBb": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1400,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-laundry-facility-clubhouse-walk/9QoEsFPXrzuQDqy4u1X1vP": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1585,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-live-easy-exceptional-br-near/44MXzNQXrW226cNueGbhqF": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1500,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-live-easy-exceptional-br-near/8bxhShL3A2rSzmVnnbsGCP": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1400,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-located-in-the-lusk-district/m9MwfMdMM7nzqHv7z5RBu4": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1420,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-looking-for-someones-to-take-lease/rMp1EECyXqRjp91KJN8kHw": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1495,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-lush-courtyards-bbqs-vinyl-plank/1KQfjCwKMkpv7Wt64UHLQb": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1585,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-lush-courtyards-vinyl-plank/vRZdZrzQYgot1rttM7vLwt": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1585,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-lush-lawns-and-landscaping-on/xr3M3HfazvD5JY22DVxoHy": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1595,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-modern-downtown-eagle-apartment/2FuDD4SmW758wedooGD28v": {
+      "first_seen": "2026-07-27T01:20:48.304656+00:00",
+      "last_price": 1195,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-modern-renovations-urban-location/pkaP5kQdbYw3fHSkE7nRwx": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1450,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-modern-townhome-with-two-master/6TicGv8uZCbQYpLg1qgdK1": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1595,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-must-see-24-hour-on-site/qmPhrbPQzvSqD9N9qRNzTH": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1280,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-must-see-br-townhome-open-kitchen/hFqLnAwZcrDHMQmnSmkFLm": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1245,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-must-see-brs-with-full-size/ejCtrmdDepna5DCMf7Njyz": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1500,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-must-see-high-speed-internet/tDirRjwCckHxjNtLMUSuWv": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1455,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-new-bathtubs-shower-heads/jVddNRYMZNWBP3pwpw4sBN": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1455,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-new-renovated-interior-close-to/iiria3zmSTb3phhM66CjMt": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1195,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-newly-renovated-apartments/dTmk1AuTSNMxsieJQhj6Lo": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1435,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-newly-renovated-pocket-park-bike/wU5bvFdgsKQ3KmLkDoCs93": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1295,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-now-serving-good-vibes-and/a6TcvgR8x86ReLZdZYm8yc": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1450,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-on-site-management-open-days-week/o3BB1JKf9HaWSBSJMnsxAC": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1278,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-online-payment-option-vaulted/we3SSuVXxEBMEQ4g8eWq7B": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1378,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-outdoor-gas-grills-garbage/s7K1idmP9hiPjCZzBrmaci": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1378,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-parks-and-courtyards-walk-from/jjUEhAsFxYwBkTxh3jsghs": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1435,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-patio-heating-professional/vyr9fmojLgTtMSEkZgXNC2": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1280,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-pet-friendly-brs-spacious-layouts/wSzJunzeCRYFp63XE4SYho": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1565,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-pet-friendly-community-private/pbaQ2R6cqBK7WuCUQn9rWo": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1305,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-pet-friendly-heating-high-speed/5xcxuqnias7tjhh8i4NmzN": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1445,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-pet-spa-dog-park-central-heating/jqf8MToFp59Y4T6ghpP1S6": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1455,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-picnic-areas-garbage-disposal-24/f8yBfoTmbGSqAuryG9v9Tc": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1378,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-pocket-park-oversized-closets-new/kp2DopQpZYRHUR8F3SXJsB": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1499,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-private-lake-access-with-walking/pwc3uR374RUm6Z5sF4ASxm": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1378,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-private-patios-new-renovated/iohBZVJ3rhbMmFpvDUREm8": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1195,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-private-patios-new-renovated/kxb6vZtoFWmzGHRj4W76qj": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1315,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-quick-convenient-access-to-84-and/c8CFUoYTAhUKZHM2ByZsLi": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1250,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-quiet-place-in-the-heart-of-eagle/ouV1c7JLjwBRgkRTCYUtRG": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1435,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-quiet-sunny-house-and-garden-in/qrhyGWy54LXfyJgSSPTc7R": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1450,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-rare-opportunity-br-ba-with-air/5VSdCzZwtGnbc1S3CrwgZW": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1425,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-rare-opportunity-br-ba-with-air/dLAPQjhYLwkgFtR4zibWuq": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1600,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-rare-opportunity-br-townhome-open/khPpykFKnWMSdjL6B6GMjR": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1245,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-rare-opportunity-pet-friendly-br/awjZgKfmUAGrx5QaEPsycZ": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1600,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-rare-opportunity-spacious-br-wood/6WsX2DEFB59fjEDsY6z6rT": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1245,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-reserved-covered-parking/8QcmAL8UtCJxYWKzmHBCSU": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1278,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-right-around-the-corner-near/qkL7Yq2hUG256oEuhfKS5a": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1250,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-sophisticated-br-townhome-open/suqdDHm9KQbbYpAdGXz3Zp": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1255,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-spacious-bedroom-bath-apartment/tD4mBLeqQ3UfneTDKRveZD": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 795,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-spacious-garden-city-townhome/gK98a8jcfaxdHfxmTHuNA8": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1595,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-spacious-studio-available-now-for/kUDHXCzRq8oHeHtfoT9f9R": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1050,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-spacious-two-bedroom-one-bath/8qsFMjKEpdaFhc7ucjPHe5": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1150,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-spectacular-views-in-every/uMuULwZYCqU2vQeB6XHvs5": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1450,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-stove-vaulted-ceilings-private/2exKMp5EUMtjqfbWrQxphH": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1278,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-sw-boise-duplex-carport-storage/67vU5uJSuoSGvCpoKZG8Tt": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1345,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-sycamore-commons-bedroom-units/budqE62N1UmEMo7jZDviki": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1520,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-the-lifestyle-you-deserve-at/6MLA3QsHcPKg884Qrssxee": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1450,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-top-floor-affordable-bedroom/eAq51QwAkop4XaooodoxUR": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1420,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-tour-today-window-coverings/ojHd8T1UsAv1XtVCavpShu": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1280,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-travel-nurses-dream-minutes-from/nPoHceCp6KM9F4FPXHtBbX": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1450,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-unbeatable-br-ba-retreat-with/iz1J4AEptRzh96TAipyk9u": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1425,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-unbeatable-br-ba-with-granite/7eiXBn9c4bqYh5utV6Whvk": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1600,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-unbeatable-br-ba-with-granite/rDzKbbuVNfBFUzw4qAaWMv": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1425,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-unbeatable-br-townhome-pool-bbqs/t6UJq1f2JfDBdMA9day3Yb": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1410,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-upcoming-availability-join/5G47ZSWTBwLajqtWDMeKuF": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1420,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-updated-2bd-2ba-apartment-in/5mzdEkL8eQBfJtkhfjMXZQ": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1450,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-upgraded-features-bike-score-94/w7jpsUpDBduXxieGoJceeQ": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1420,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-upscale-living-washer-dryer/pS812odAyZAkjVqf3tDVn8": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1565,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-vaulted-foot-ceilings-air/nPjP7j1gquqkKGpJt3vGXS": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1420,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-views-of-ann-morrison-park-and/1ym1CUThuduuRuYjtQeJJz": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1420,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-views-of-ann-morrison-park-and/6EHP4oPN9XRux1HEF7gfg3": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1280,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-views-of-ann-morrison-park-and/jenZW9mY9485ZvzjP3yF1Z": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1280,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-vinyl-plank-flooring-new/kGyCb84fQFQdqgaEGsksyd": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1315,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-vinyl-plank-flooring-private/2efxbguVkHmuhnG4YabJ8q": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1425,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-walk-in-closets-in-home-d-kitchen/oV5BFEMjs2dkMUSEVM8BKy": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1585,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-when-minutes-matter-live-where/5FFYHib8oeiDaqbpt82fJv": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1450,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/caldwell-1bd-duplex-in-great-caldwell/3WKdcokN5rcQe6su4a5af4": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1295,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/caldwell-affordable-1bdrm-caldwell/oD2PNAH46on2eQp44rGa7w": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 995,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/caldwell-affordable-living-with-fitness/dLw3bbkJZTynMJc7z25SWR": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 861,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/caldwell-bbq-area-playground-more/a7WsgnmK1a961kb5u4aGPZ": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 861,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/caldwell-bbq-area-playground-more/pYiTHdR1qLDjZKbwQ4zR37": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 861,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/caldwell-bbq-area-playground-more/s6mtofXtppFnASidzbUvfP": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 861,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/caldwell-bbq-area-playground-more/x9P8UnRgZmnR8Mh47z7uqr": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 922,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/caldwell-blocks-from-college-of-idaho/wSm31AL1Sd3uh2CBpm6VfG": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 995,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/caldwell-caldwell-home-coming-soon/pVEYugczQamo57bmptcPDN": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1450,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/caldwell-close-to-shopping-restaurants/k2HeRU8s2QYNCTDSvVqSJP": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 861,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/caldwell-coming-soon-2710-georgia-ave/r9CQjZbYPPKnquc6ZFuQkj": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1250,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/caldwell-coming-soon-spruce-will/u3ojiw8fuF5zmjnTFzcyFj": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1300,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/caldwell-cozy-homes-in-caldwell-close/1fwd3fn34kEp5RyuXKPuVx": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 922,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/caldwell-daylight-basement-1bd-duplex/8JLFZaE4ae97nyTsARUwya": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1295,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/caldwell-four-blocks-from-college-of/rnFoFYEnveMv6GiRrDqtFR": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1195,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/caldwell-french-doors-to-patio-walk-in/gA4TMDQYDfAtTdSN18e3Qz": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 922,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/caldwell-laundry-facility-full-kitchen/4u6bru5Rvzc6TMakt9KCRX": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 922,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/caldwell-make-connections-community/bd2Gh8yVWpJ1k8xm5bcGmf": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 922,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/caldwell-private-1bd-cottage-in-caldwell/9xAATZRgodcQcS3LwLnkVi": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 995,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/caldwell-remodeled-triplex/sVbJpjSeAEmy6x4QZrp3AK": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1195,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/caldwell-single-level-2bd-triplex-unit/n2Z13CiGZKVP84sBc2c4a6": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1225,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/caldwell-single-level-private-1bd/4TaE4vhHD1tnAR8xvtshqB": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 995,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/caldwell-spacious-canyon-hill-unit-in/fvZguEfsGDWzSNCXTvo3nT": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1225,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/caldwell-spacious-floor-plans-comfort/vVBEM1XTuXCmKQtb23FA5H": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 922,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/caldwell-upstairs-caldwell-apartment-in/r3vSSm2CAdU5MQCqhKMBcG": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 995,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/caldwell-walk-in-closet-laundry/iaXaZ18TcqrhyV878ZAeSe": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 861,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/fruitland-remodeled-apartment/6PYiyqhhjyj3uHQbFuMRni": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 995,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/greenleaf-huge-shaded-rv-spot-available/pwedLTyccNWD5jaYqVKvyS": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 600,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/lake-fork-5th-wheel-rv-trailer-for-rent/7WufJfDW9eBbGitCZVGuY4": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 950,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/mccall-brand-new-luxury-apartment-in/c3KBYqvy2tCJsv6NqTiNgF": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1150,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/meridian-2780-mcmillan-road-meridian-id/6hPp57md5AYugqg88gjgNo": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1495,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/meridian-captivating-br-ba-haven-with/nCCU3pAycbeZ1J7y9R6aSZ": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1595,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/meridian-comfortable-meridian-apartment/ahqsZA7RBrKwQx8uHbT2ro": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1325,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/meridian-convineint-location-great/ctBRX8gmgX49ypPiakCrtm": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1525,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/meridian-cozy-br-ba-retreat-with/o9pru6WdkEj8sPjVkUXNZ2": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1595,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/meridian-exclusive-br-ba-getaway-with/wsMZC26fTUac5yxqeJeQsC": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1595,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/meridian-gorgeous-br-ba-home-with-ft/uKKb7qHc72aFGhzG4EZBgp": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1595,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/meridian-practical-2bd-pet-friendly/nCPjYgoZLEsHwnXnx8CVRQ": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1325,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/meridian-rare-opportunity-br-ba-home/jTFGufL2vkpFvJLv1zPUd3": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1595,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/meridian-sophisticated-br-ba-living/5t5KMvXJqyEbpdzXP6aRzV": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1595,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/meridian-student-housing-for-northwest/nriktEwSiGhLZaLg2kjSgh": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 700,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/meridian-take-tour-today-and-stay-847/14eXT1eXvjWGB2bXU8UoJ3": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 847,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/meridian-take-tour-today-and-stay-847/4yzPtgscnDqFLuUjpcMmc6": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 847,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/meridian-take-tour-today-and-stay-847/6Ew966hRKuud3meKNiQK1t": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 847,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/meridian-take-tour-today-and-stay-847/9pgz1tZYWx3juBTCgwWeA7": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 847,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/meridian-take-tour-today-and-stay-847/b9BQC6rypVm1qE2toHEjoo": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 847,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/meridian-take-tour-today-and-stay-847/cYUACc1tx4AKvy9iUsULfg": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 847,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/meridian-take-tour-today-and-stay-847/f8rNtLd1G3s4kGz4Qk1fAT": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 847,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/meridian-take-tour-today-and-stay-847/pT78nTofsv8S8r4GdcecLy": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 847,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/meridian-take-tour-today-and-stay-847/rqu1CgnbrBSqjfCuAm3M5u": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 847,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/meridian-take-tour-today-and-stay-847/uk5Y2PHfq3PZ7PpdMMXnPX": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 847,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/meridian-take-tour-today-and-stay-847/wXPikkxGPdV9DjAjtJZo7b": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 847,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/meridian-take-tour-today-and-stay-847/xoRcU5kW4B7hiuzdgcH5go": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 847,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/meridian-take-tour-today-and-stay-926/ssgtrdLk94Tds43KtQveNm": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 926,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/meridian-take-tour-today-and-stay-926/uZVwc3214zT91zM1RhnnPG": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 926,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/meridian-take-tour-today-and-stay-926/vqsYJitqza4To93X17jNDF": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 926,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/middleton-middleton-rv-site-full-hookups/4TEdTPL3PqWLsDpqMDVDoe": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 900,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/middleton-middleton-rv-site-full-hookups/5oNA4Ci5EPBSozgaWBLqzj": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 900,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/middleton-middleton-rv-site-full-hookups/afsMVJhxLyeyfbDR8Kq2gH": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 860,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/mountain-home-bed-bath-apartment/5sq3VEsN3HzX2cD4pWMF9d": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 922,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-10th-ave-2a/ntavYFT2tN9ps24y6TSY3P": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1150,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-1bed-1bath/5TJoBRreRcSDFnXjjfeK6y": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1200,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-1br-1ba-rental-711-mo-700-sf-5th/o2JcD5QibYx67jzTTthScf": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 711,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-2bd-2ba-nampa-apartment-with/pNyyyNZuUWpWGWa5rM6yHb": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1350,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-41-rowena/3WNPQPbQ8obwCoPtLkQqNi": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1300,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-awesome-2bed-unit-for-rent-in/rjFmN1DZDjHKVNqC2M9vHt": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1000,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-beautiful-2bedroom-nampa/x1zGw3EJkcjFAAgCaYGS7S": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1169,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-bedroom-corner-lot-home-in-nampa/wURZhWgwTRysyegCJiBKNv": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1185,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-central-nampa-2bd-2ba-apartment/rMXBPL58XrxhJJSxa1LjSL": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1350,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-charming-2bd-nampa-duplex-in/mtryKUrvVVifKEYD46TXko": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1295,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-charming-nampa-duplex-on-quiet/jCb17rS2VwVmN9gHgxq9HQ": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1295,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-clearwater-heights-where/w7jCAWBzfrj5NZNDNRSuY4": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1495,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-convenient-nampa-western-village/4ipinBFvqp1j3upAwDz6EL": {
+      "first_seen": "2026-07-27T01:20:48.304656+00:00",
+      "last_price": 1125,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-everything-you-need-all-right/ax2Y8NEwnU1PCDsTyDTzgM": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1295,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-get-ready-to-come-home-to/hhojB3TXEw2ZnV8kEJ29rK": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1495,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-modern-comfort-meets-convenient/gpAsS5Z2PaAFr8YyfeSXZh": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1495,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-modern-design-premium-comfort/qzLCfSkd3WB5y971YwbxtV": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1450,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-nampa-bed-with-discount-for-on/tZ21fJvAbcre1nQSgvLqvT": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1000,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-nampa-duplex-coming-soon/sieiman2qpcgvDegrH8ZC8": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1300,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-nampa-home-coming-soon/fe3iUTPLwwENMutMk7dpSA": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1450,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-nampa-townhome-coming-soon/8P1rZjDxJiM88YhUR5CJo5": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1295,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-newer-apartment-living-with-the/ehrE4bYvX5izKDHEXQ5JM8": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1495,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-offering-the-perfect-balance-of/kNczaVjoLQiN6Y5HFhUNXR": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1175,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-popular-2bd-2b-nampa-apartment/ajQKhQtPqCv63hfMk8GmSM": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1395,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-popular-nampa-western-village/q8p21qPcQWxhngAwXieXz5": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1125,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-spacious-and-cozy-living-in-nampa/xxaCsv5ofwUUNq8yYCMBCz": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1175,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-spacious-bedroom-15-bath/tgKL7YchU26xp4uyVP7dWK": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1193,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-stylish-one-bedroom-retreat/hXQVjHJJvSMYs5ePzYLS21": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1399,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/payette-bedroom-bath/gqLr5DHssKj7WPzgkG7aRo": {
+      "first_seen": "2026-07-27T01:09:28.495015+00:00",
+      "last_price": 1200,
+      "last_seen": "2026-07-27T01:20:48.304656+00:00"
+    }
+  }
+}

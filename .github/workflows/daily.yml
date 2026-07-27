@@ -1,0 +1,36 @@
+name: Daily rental scan
+
+on:
+  schedule:
+    # 8:00am MDT (summer) / 7:00am MST (winter) — GitHub Actions cron has no DST awareness
+    - cron: "0 14 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: Run pipeline
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python main.py
+
+      - name: Commit updated dashboard + state
+        run: |
+          git config user.name "boise-rental-bot"
+          git config user.email "actions@github.com"
+          git add docs/index.html state.json
+          git diff --cached --quiet || git commit -m "Daily rental scan $(date -u +%Y-%m-%d)"
+          git push
