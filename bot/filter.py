@@ -16,12 +16,20 @@ def _area_match(text):
     return False
 
 
+def _is_apartment(text):
+    return any(kw in text for kw in config.APARTMENT_KEYWORDS)
+
+
 def apply_filters(listings):
     kept = []
     for listing in listings:
         if listing["price"] > config.MAX_RENT:
             continue
         if listing["pet_cats"] == "not_allowed":
+            continue
+
+        type_text = f"{listing['title']} {listing.get('description', '')}".lower()
+        if _is_apartment(type_text):
             continue
 
         beds = listing.get("beds")

@@ -26,10 +26,18 @@ RECIPIENTS = ["spencer.a.slavens@gmail.com", "jaredbrodd@gmail.com"]
 SENDER_EMAIL = "jaredbrodd@gmail.com"
 
 # --- Sources ---
+# housing_type codes confirmed against real Craigslist listings: 2=condo, 6=house,
+# 9=townhouse. Deliberately excludes apartments (1) at the source — no apartment
+# complexes, per the hard criteria.
 CRAIGSLIST_SEARCH_URL = (
     "https://www.craigslist.org/search/area/boise?cat=apa"
     "&max_price={max_price}&min_bedrooms={min_beds}&max_bedrooms={max_beds}"
+    "&housing_type=2&housing_type=6&housing_type=9"
 )
+
+# AppFolio doesn't expose a structured property-type field on its listings page,
+# so apartment-complex exclusion there falls back to keyword matching on the title.
+APARTMENT_KEYWORDS = ["apartment", "apartments", "apts"]
 
 # AppFolio-hosted Boise-area property management companies.
 # To add more: find "{name}.appfolio.com" in a PM company's page source,
@@ -44,5 +52,5 @@ DASHBOARD_URL = "https://angularpirate.github.io/boise-rental-bot/"
 # Email is a concise daily brief, not a full dump — cap how many cards get
 # embedded inline per section; the rest are a count + link to the dashboard.
 # (Matters most on the very first run, when every listing is "new" to the bot.)
-EMAIL_CONTACT_TODAY_PREVIEW = 20
-EMAIL_STILL_LIVE_PREVIEW = 8
+EMAIL_GOOD_MATCHES_PREVIEW = 20
+EMAIL_NEEDS_REVIEW_PREVIEW = 8

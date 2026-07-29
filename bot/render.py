@@ -105,7 +105,10 @@ def _card_html(listing):
         bb.append(f"{baths:g} ba")
     bb_str = " / ".join(bb) if bb else "beds/baths unlisted"
 
-    badges = "".join(f'<span class="badge warn">{_esc(f)}</span>' for f in listing.get("flags", []))
+    badges = ""
+    if listing["contact_today"]:
+        badges += '<span class="badge">New today</span>'
+    badges += "".join(f'<span class="badge warn">{_esc(f)}</span>' for f in listing.get("flags", []))
 
     return f"""
     <div class="card">
@@ -129,8 +132,8 @@ def _section_html(title, listings):
 
 def render_dashboard(ranked_listings, scanned_count, now=None):
     now = now or datetime.now(timezone.utc)
-    contact_today = [listing for listing in ranked_listings if listing["contact_today"]]
-    still_live = [listing for listing in ranked_listings if not listing["contact_today"]]
+    good_matches = [listing for listing in ranked_listings if not listing.get("flags")]
+    needs_review = [listing for listing in ranked_listings if listing.get("flags")]
 
     updated_str = now.astimezone(MOUNTAIN_TZ).strftime("%b %-d, %Y at %-I:%M %p MT")
 
@@ -150,8 +153,8 @@ def render_dashboard(ranked_listings, scanned_count, now=None):
     <div class="updated-badge"><span class="dot"></span>Updated {updated_str} &middot; refreshes daily at 8am MT</div>
   </header>
 
-  {_section_html("Contact Today", contact_today)}
-  {_section_html("Still Live", still_live)}
+  {_section_html("Good Matches", good_matches)}
+  {_section_html("Needs Your Review", needs_review)}
 
   <footer>
     {scanned_count} listings scanned &middot; next run tomorrow 8:00am MT

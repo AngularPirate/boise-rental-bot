@@ -48,13 +48,20 @@ python3 main.py              # also emails, if GMAIL_ADDRESS/GMAIL_APP_PASSWORD 
    dashboard + `state.json` back to the repo. Trigger a run manually anytime from the
    Actions tab (`workflow_dispatch`) to test without waiting for the schedule.
 
-## How ranking works
+## How sections & ranking work
 
-- **Contact Today**: posted (Craigslist) or first seen by the bot (AppFolio) within
-  the last 24 hours.
-- Score rewards: recency, price closer to the $1,600 ceiling with more beds (more
-  space for the money), exact neighborhood match, Sept 1 move-in mention, and
-  explicit "cats OK" pet policy.
-- Listings with unclear pet policy, unconfirmed bed count, or unconfirmed
-  neighborhood are still shown, flagged for manual confirmation — never silently
-  dropped just because the scrape couldn't confirm a soft detail.
+- **Good Matches**: passed every hard criterion with nothing left to double-check —
+  price, beds, cats allowed, and neighborhood are all confirmed.
+- **Needs Your Review**: still passed the hard filters, but something's unconfirmed
+  (pet policy unclear, bed count missing, or neighborhood not confirmed by
+  text/ZIP) — shown, not dropped, so you can judge for yourself instead of losing
+  a potentially good listing to an incomplete scrape.
+- Apartments/apartment complexes are hard-excluded from both sections — Craigslist
+  is filtered at the source via its `housing_type` param (condo/house/townhouse
+  only), and AppFolio listings are excluded if "apartment(s)"/"apts" appears in
+  the title.
+- Within each section, listings are sorted by a deterministic score rewarding:
+  recency (a "New today" badge marks anything posted/first-seen in the last 24h),
+  price closer to the $1,600 ceiling with more beds (more space for the money),
+  exact neighborhood match, Sept 1 move-in mention, and explicit "cats OK" pet
+  policy.
