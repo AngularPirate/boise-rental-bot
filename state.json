@@ -3,7 +3,7 @@
     "appfolio:alohapm:712": {
       "first_seen": "2026-08-08T14:29:16.988746+00:00",
       "last_price": 1251,
-      "last_seen": "2026-08-18T14:30:13.318037+00:00"
+      "last_seen": "2026-08-19T14:30:10.152591+00:00"
     },
     "craigslist:https://www.craigslist.org/view/d/boise-998-phillippi-st/gq27EQi1hvA1bo5hY6e3HK": {
       "first_seen": "2026-07-27T01:09:28.495015+00:00",
@@ -13,7 +13,7 @@
     "craigslist:https://www.craigslist.org/view/d/boise-998-phillippi-st/vWgkYGPqryoBTUL57gSrcn": {
       "first_seen": "2026-08-18T14:30:13.318037+00:00",
       "last_price": 1295,
-      "last_seen": "2026-08-18T14:30:13.318037+00:00"
+      "last_seen": "2026-08-19T14:30:10.152591+00:00"
     },
     "craigslist:https://www.craigslist.org/view/d/boise-adorable-bedroom-bathroom-home/3gaBd1yXFVGkUBDZJ9SsDG": {
       "first_seen": "2026-08-18T14:30:13.318037+00:00",
@@ -23,7 +23,12 @@
     "craigslist:https://www.craigslist.org/view/d/boise-bdrm-carport-north-end-townhome/tJ5dAbqCXEp9YRDRfNVJZ1": {
       "first_seen": "2026-07-30T15:50:47.262521+00:00",
       "last_price": 1200,
-      "last_seen": "2026-08-18T14:30:13.318037+00:00"
+      "last_seen": "2026-08-19T14:30:10.152591+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-beautiful-bed-bath-house-in-boise/eU1bVyySd3Zoj7FY5p2rjr": {
+      "first_seen": "2026-08-19T14:30:10.152591+00:00",
+      "last_price": 800,
+      "last_seen": "2026-08-19T14:30:10.152591+00:00"
     },
     "craigslist:https://www.craigslist.org/view/d/boise-beautiful-bed-bath-house-in-boise/sK4JSfm7dRfmrBfc2cptgx": {
       "first_seen": "2026-08-18T14:30:13.318037+00:00",
@@ -53,7 +58,7 @@
     "craigslist:https://www.craigslist.org/view/d/boise-breathtaking-views-this-2br-2ba/9punhDjRVs5qBu9ANwAsmU": {
       "first_seen": "2026-07-27T01:09:28.495015+00:00",
       "last_price": 1150,
-      "last_seen": "2026-08-18T14:30:13.318037+00:00"
+      "last_seen": "2026-08-19T14:30:10.152591+00:00"
     },
     "craigslist:https://www.craigslist.org/view/d/boise-charming-bed-bath-home/x8QS6GE9chRff1BAv6Rov2": {
       "first_seen": "2026-08-12T14:54:11.548669+00:00",
@@ -64,6 +69,11 @@
       "first_seen": "2026-08-18T14:30:13.318037+00:00",
       "last_price": 775,
       "last_seen": "2026-08-18T14:30:13.318037+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/boise-charming-bedroom-bathroom-home/827JfK8fxhhUqB5eDDQcgH": {
+      "first_seen": "2026-08-19T14:30:10.152591+00:00",
+      "last_price": 775,
+      "last_seen": "2026-08-19T14:30:10.152591+00:00"
     },
     "craigslist:https://www.craigslist.org/view/d/boise-charming-bedroom-bathroom-home/aMs8zC8TSQt5hMfUS7jdMU": {
       "first_seen": "2026-08-12T14:54:11.548669+00:00",
@@ -113,7 +123,7 @@
     "craigslist:https://www.craigslist.org/view/d/boise-find-your-perfect-space-here/cXLHWGsc24wtQPMKVbwGLV": {
       "first_seen": "2026-08-18T14:30:13.318037+00:00",
       "last_price": 995,
-      "last_seen": "2026-08-18T14:30:13.318037+00:00"
+      "last_seen": "2026-08-19T14:30:10.152591+00:00"
     },
     "craigslist:https://www.craigslist.org/view/d/boise-find-your-perfect-space-here/kfhFA8CgTbAoKoa7tEUbyq": {
       "first_seen": "2026-08-04T16:10:04.484200+00:00",
@@ -170,6 +180,11 @@
       "last_price": 800,
       "last_seen": "2026-08-12T14:54:11.548669+00:00"
     },
+    "craigslist:https://www.craigslist.org/view/d/boise-spacious-bedroom-bath-house-for/b1VLB8VNP1cjkC9cfF2s9D": {
+      "first_seen": "2026-08-19T14:30:10.152591+00:00",
+      "last_price": 1150,
+      "last_seen": "2026-08-19T14:30:10.152591+00:00"
+    },
     "craigslist:https://www.craigslist.org/view/d/boise-spacious-garden-city-townhome/gK98a8jcfaxdHfxmTHuNA8": {
       "first_seen": "2026-07-27T01:09:28.495015+00:00",
       "last_price": 1595,
@@ -198,7 +213,7 @@
     "craigslist:https://www.craigslist.org/view/d/caldwell-caldwell-home-coming-soon/c9M48AXYeq9gtAYtfN2Gyr": {
       "first_seen": "2026-08-07T14:51:00.769109+00:00",
       "last_price": 1400,
-      "last_seen": "2026-08-18T14:30:13.318037+00:00"
+      "last_seen": "2026-08-19T14:30:10.152591+00:00"
     },
     "craigslist:https://www.craigslist.org/view/d/caldwell-caldwell-home-coming-soon/pVEYugczQamo57bmptcPDN": {
       "first_seen": "2026-07-27T01:09:28.495015+00:00",
@@ -208,17 +223,17 @@
     "craigslist:https://www.craigslist.org/view/d/caldwell-coming-soon-blaine-st/9ecfQxQV72W8E49arXCXFK": {
       "first_seen": "2026-08-07T14:51:00.769109+00:00",
       "last_price": 1400,
-      "last_seen": "2026-08-18T14:30:13.318037+00:00"
+      "last_seen": "2026-08-19T14:30:10.152591+00:00"
     },
     "craigslist:https://www.craigslist.org/view/d/middleton-middleton-rv-site-full-hookups/inkFtMsQkytbeUQSiN5r4E": {
       "first_seen": "2026-08-04T16:10:04.484200+00:00",
       "last_price": 900,
-      "last_seen": "2026-08-18T14:30:13.318037+00:00"
+      "last_seen": "2026-08-19T14:30:10.152591+00:00"
     },
     "craigslist:https://www.craigslist.org/view/d/nampa-charming-end-bedroom-home/n4fBQ7NbYew4PDXiRmJDHz": {
       "first_seen": "2026-08-14T14:47:29.080546+00:00",
       "last_price": 1000,
-      "last_seen": "2026-08-18T14:30:13.318037+00:00"
+      "last_seen": "2026-08-19T14:30:10.152591+00:00"
     },
     "craigslist:https://www.craigslist.org/view/d/nampa-charming-spacious-bedroom-home/9ZQFbFLnBK9XWoXniGCCCL": {
       "first_seen": "2026-08-12T14:54:11.548669+00:00",
@@ -229,6 +244,11 @@
       "first_seen": "2026-08-12T14:54:11.548669+00:00",
       "last_price": 1200,
       "last_seen": "2026-08-12T14:54:11.548669+00:00"
+    },
+    "craigslist:https://www.craigslist.org/view/d/nampa-cute-bedroom/qWA8AG2XZoN2qGouZoRGKS": {
+      "first_seen": "2026-08-19T14:30:10.152591+00:00",
+      "last_price": 1000,
+      "last_seen": "2026-08-19T14:30:10.152591+00:00"
     },
     "craigslist:https://www.craigslist.org/view/d/nampa-nampa-home-coming-soon/fe3iUTPLwwENMutMk7dpSA": {
       "first_seen": "2026-07-27T01:09:28.495015+00:00",
