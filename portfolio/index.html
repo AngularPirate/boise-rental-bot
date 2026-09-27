@@ -1,0 +1,295 @@
+<title>[Her Name] · Instructional Design</title>
+<!--
+  HOW TO EDIT
+  Anything in [square brackets] is a placeholder. Replace it with real content.
+  Each project is one <article class="project"> block. Copy one to add a project,
+  delete one to remove it. Change the status pill to: Complete / In progress / Planned.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,600&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+  :root {
+    --bg: #f5f7f6;
+    --surface: #ffffff;
+    --ink: #1c2527;
+    --muted: #56646a;
+    --line: #dbe2e1;
+    --river: #1f5566;
+    --river-soft: #e3eef0;
+    --sage: #5f7a55;
+    --sage-soft: #e7eee2;
+    --gold: #9a6a12;
+    --gold-soft: #f6ecd8;
+    --serif: "Literata", Georgia, "Times New Roman", serif;
+    --sans: "Source Sans 3", "Segoe UI", system-ui, -apple-system, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #121819; --surface: #1a2223; --ink: #e6ecec; --muted: #9eadb1; --line: #2c3739;
+      --river: #7fbccd; --river-soft: #1d3339; --sage: #a3c196; --sage-soft: #223024;
+      --gold: #e2b25c; --gold-soft: #33291a;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #121819; --surface: #1a2223; --ink: #e6ecec; --muted: #9eadb1; --line: #2c3739;
+    --river: #7fbccd; --river-soft: #1d3339; --sage: #a3c196; --sage-soft: #223024;
+    --gold: #e2b25c; --gold-soft: #33291a;
+  }
+
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: var(--sans); font-size: 17px; line-height: 1.6;
+    padding-inline: 20px;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding-block: 56px 72px; display: grid; gap: 64px; }
+  h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.2; text-wrap: balance; margin: 0; }
+  h1 { font-size: clamp(2rem, 5vw, 2.9rem); }
+  h2 { font-size: 1.6rem; }
+  h3 { font-size: 1.25rem; }
+  p { margin: 0; max-width: 65ch; }
+  a { color: var(--river); text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--river); outline-offset: 3px; border-radius: 4px; }
+  .eyebrow { font-size: .8rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--sage); }
+  section { display: grid; gap: 20px; }
+  .lede { font-size: 1.15rem; color: var(--muted); }
+
+  /* Header */
+  header { display: grid; gap: 16px; padding-bottom: 40px; border-bottom: 1px solid var(--line); }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px 20px; color: var(--muted); font-size: .95rem; }
+  .jump { display: flex; flex-wrap: wrap; gap: 8px 18px; font-weight: 600; font-size: .95rem; }
+
+  /* Story */
+  .story { display: grid; gap: 14px; }
+  .pull { font-family: var(--serif); font-size: 1.3rem; line-height: 1.45; color: var(--river); max-width: 32ch; }
+
+  /* Process: a real sequence, so it's numbered */
+  .steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+  .steps li { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 16px; display: grid; gap: 4px; align-content: start; }
+  .steps b { font-family: var(--serif); font-size: 1.05rem; }
+  .steps .n { font-size: .8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .steps span:last-child { font-size: .92rem; color: var(--muted); line-height: 1.45; }
+
+  /* Projects */
+  .projects { display: grid; gap: 24px; }
+  .project { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 28px; display: grid; gap: 18px; }
+  .project-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: start; gap: 10px 16px; }
+  .project-head div { display: grid; gap: 6px; }
+  .pill { font-size: .78rem; font-weight: 600; letter-spacing: .04em; padding: 3px 10px; border-radius: 999px; white-space: nowrap; }
+  .pill.done { background: var(--sage-soft); color: var(--sage); }
+  .pill.progress { background: var(--gold-soft); color: var(--gold); }
+  .pill.planned { background: var(--river-soft); color: var(--river); }
+  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px 24px; margin: 0; padding: 14px 0; border-block: 1px solid var(--line); }
+  .facts div { display: grid; gap: 2px; }
+  .facts dt { font-size: .75rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .facts dd { margin: 0; font-size: .95rem; }
+  .case { display: grid; gap: 14px; }
+  .case h4 { margin: 0 0 2px; font-size: .95rem; font-weight: 600; color: var(--river); }
+  .sample { display: flex; flex-wrap: wrap; gap: 10px 20px; font-weight: 600; }
+
+  /* Skills */
+  .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; }
+  .skills h3 { font-size: 1.05rem; margin-bottom: 8px; }
+  .skills ul { margin: 0; padding-left: 18px; color: var(--muted); display: grid; gap: 4px; }
+
+  /* Contact */
+  .contact { background: var(--river-soft); border-radius: 10px; padding: 28px; display: grid; gap: 14px; }
+  .contact-row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; }
+  .email { font-weight: 600; user-select: all; overflow-wrap: anywhere; }
+  button { font: inherit; font-size: .9rem; font-weight: 600; padding: 6px 14px; border-radius: 6px; border: 1px solid var(--river); background: transparent; color: var(--river); cursor: pointer; }
+  button:hover { background: var(--surface); }
+  footer { color: var(--muted); font-size: .85rem; }
+
+  @media (max-width: 480px) {
+    .wrap { padding-block: 32px 48px; gap: 48px; }
+    .project, .contact { padding: 20px; }
+  }
+</style>
+
+<main class="wrap">
+
+  <!-- ============ HEADER ============ -->
+  <header>
+    <span class="eyebrow">Instructional Design Portfolio</span>
+    <h1>[Her Name]</h1>
+    <p class="lede">I design clear, accessible learning experiences that help community college students succeed and help faculty teach with confidence, online and in the classroom.</p>
+    <div class="meta">
+      <span>Boise, Idaho</span>
+      <span>[email@example.com]</span>
+      <a href="https://www.linkedin.com/">[LinkedIn]</a>
+    </div>
+    <nav class="jump" aria-label="Page sections">
+      <a href="#story">My story</a>
+      <a href="#process">How I design</a>
+      <a href="#work">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ============ STORY ============ -->
+  <section id="story" class="story">
+    <span class="eyebrow">Why instructional design</span>
+    <h2>[One-line headline about her path, e.g. "From the classroom to course design"]</h2>
+    <p>[2–3 sentences about where she started. What did she do before? Teaching, training new hires, tutoring, coaching, customer education? Name the moment she realized she loved helping people learn.]</p>
+    <p class="pull">[A short line in her own voice about what good learning looks like to her.]</p>
+    <p>[2–3 sentences on why CWI. Community college students juggle work, family, and school. Mention what draws her to CWI's mission and to supporting faculty across departments.]</p>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section id="process">
+    <span class="eyebrow">How I design</span>
+    <h2>A simple, repeatable process</h2>
+    <p>I follow the ADDIE model and start with the end in mind: what should a learner be able to do when they finish? Every project below moves through these five steps.</p>
+    <ol class="steps">
+      <li><span class="n">Step 1</span><b>Analyze</b><span>Talk with faculty and students. Find the real gap.</span></li>
+      <li><span class="n">Step 2</span><b>Design</b><span>Write measurable outcomes and map activities to them.</span></li>
+      <li><span class="n">Step 3</span><b>Develop</b><span>Build in Canvas with accessible, consistent pages.</span></li>
+      <li><span class="n">Step 4</span><b>Implement</b><span>Pilot with real learners and support faculty at launch.</span></li>
+      <li><span class="n">Step 5</span><b>Evaluate</b><span>Gather feedback and data, then revise.</span></li>
+    </ol>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="work">
+    <span class="eyebrow">Selected projects</span>
+    <h2>Work samples</h2>
+    <p>Each project shows the problem, my approach, and what changed. Projects marked <i>In progress</i> or <i>Planned</i> are ones I am building now to grow my skills.</p>
+
+    <div class="projects">
+
+      <!-- PROJECT 1 -->
+      <article class="project" id="project-canvas">
+        <div class="project-head">
+          <div>
+            <span class="eyebrow">Online course design</span>
+            <h3>Redesigning a Canvas module for first-year students</h3>
+          </div>
+          <span class="pill progress">In progress</span>
+        </div>
+        <dl class="facts">
+          <div><dt>Audience</dt><dd>First-semester online students</dd></div>
+          <div><dt>My role</dt><dd>Instructional designer (solo)</dd></div>
+          <div><dt>Tools</dt><dd>Canvas, Rise 360, Canva</dd></div>
+          <div><dt>Standards</dt><dd>Quality Matters, WCAG 2.1 AA</dd></div>
+        </dl>
+        <div class="case">
+          <div><h4>The problem</h4><p>[New online students get lost in modules that are long text pages with unclear due dates. Describe the course and what wasn't working.]</p></div>
+          <div><h4>My approach</h4><p>[Rebuilt the module around three measurable outcomes. Added a module overview page, short videos with captions, a practice quiz with feedback, and a consistent page template.]</p></div>
+          <div><h4>The result</h4><p>[What changed? Feedback from a pilot group, a QM self-review score, or before-and-after screenshots.]</p></div>
+        </div>
+        <div class="sample"><a href="#">[View the module]</a><a href="#">[Design document (PDF)]</a></div>
+      </article>
+
+      <!-- PROJECT 2 -->
+      <article class="project" id="project-faculty">
+        <div class="project-head">
+          <div>
+            <span class="eyebrow">Faculty development</span>
+            <h3>Accessible Canvas pages in 15 minutes</h3>
+          </div>
+          <span class="pill planned">Planned</span>
+        </div>
+        <dl class="facts">
+          <div><dt>Audience</dt><dd>Adjunct and full-time faculty</dd></div>
+          <div><dt>My role</dt><dd>Designer and developer</dd></div>
+          <div><dt>Tools</dt><dd>Articulate Storyline, Canvas</dd></div>
+          <div><dt>Format</dt><dd>Self-paced microlearning + job aid</dd></div>
+        </dl>
+        <div class="case">
+          <div><h4>The problem</h4><p>[Faculty want accessible courses but have little time. Common issues: missing alt text, color-only cues, and headings used for styling.]</p></div>
+          <div><h4>My approach</h4><p>[A short scenario-based module where faculty fix a sample page, followed by a one-page checklist they can keep open while building.]</p></div>
+          <div><h4>The result</h4><p>[How you'll measure success: pre/post check, fewer accessibility checker errors, faculty feedback.]</p></div>
+        </div>
+        <div class="sample"><a href="#">[Try the module]</a><a href="#">[Download the job aid]</a></div>
+      </article>
+
+      <!-- PROJECT 3 -->
+      <article class="project" id="project-orientation">
+        <div class="project-head">
+          <div>
+            <span class="eyebrow">Student success</span>
+            <h3>Getting ready for online learning: a student orientation</h3>
+          </div>
+          <span class="pill planned">Planned</span>
+        </div>
+        <dl class="facts">
+          <div><dt>Audience</dt><dd>Students new to online classes</dd></div>
+          <div><dt>My role</dt><dd>Needs analysis, design, build</dd></div>
+          <div><dt>Tools</dt><dd>Canvas, Vyond, Google Forms</dd></div>
+          <div><dt>Framework</dt><dd>Universal Design for Learning</dd></div>
+        </dl>
+        <div class="case">
+          <div><h4>The problem</h4><p>[Students drop online courses early because they don't know how to navigate Canvas, manage time, or ask for help.]</p></div>
+          <div><h4>My approach</h4><p>[A 30-minute self-paced orientation with a short animated video, a "find it in Canvas" scavenger hunt, and a weekly planner template.]</p></div>
+          <div><h4>The result</h4><p>[Survey results, completion rate, or student quotes from a pilot.]</p></div>
+        </div>
+        <div class="sample"><a href="#">[Watch the video]</a><a href="#">[See the storyboard]</a></div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills">
+    <span class="eyebrow">Skills and tools</span>
+    <h2>What I bring</h2>
+    <div class="skills">
+      <div>
+        <h3>Design</h3>
+        <ul>
+          <li>ADDIE and backward design</li>
+          <li>Measurable learning outcomes</li>
+          <li>Storyboarding</li>
+          <li>Assessment and rubric design</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Tools</h3>
+        <ul>
+          <li>Canvas LMS</li>
+          <li>Articulate Rise and Storyline</li>
+          <li>Canva, Vyond, Camtasia</li>
+          <li>[Add or remove tools she uses]</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Quality and access</h3>
+        <ul>
+          <li>Quality Matters rubric</li>
+          <li>WCAG 2.1 accessibility</li>
+          <li>Universal Design for Learning</li>
+          <li>Working with faculty as partners</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="contact">
+    <h2>Let's talk</h2>
+    <p>Thank you for taking the time to review my work. I'd love to talk about how I can support CWI faculty and students.</p>
+    <div class="contact-row">
+      <span class="email" id="email">[email@example.com]</span>
+      <button type="button" id="copy-email">Copy email</button>
+    </div>
+    <p>[Phone number, optional] · <a href="#">[Résumé (PDF)]</a></p>
+  </section>
+
+  <footer>Last updated [Month Year]</footer>
+</main>
+
+<script>
+  document.getElementById('copy-email').addEventListener('click', function () {
+    var btn = this, text = document.getElementById('email').textContent.trim();
+    function done(msg) { btn.textContent = msg; setTimeout(function () { btn.textContent = 'Copy email'; }, 1800); }
+    function fallback() {
+      var r = document.createRange(); r.selectNodeContents(document.getElementById('email'));
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); done('Selected');
+    }
+    try { navigator.clipboard.writeText(text).then(function () { done('Copied'); }, fallback); }
+    catch (e) { fallback(); }
+  });
+</script>
