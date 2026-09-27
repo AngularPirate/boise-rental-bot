@@ -6,7 +6,7 @@ The single source of truth for the portfolio site. When building any prototype o
 
 ## 1. The job this site does
 
-- **Goal:** Help [Her Name] get an interview and then an offer for the Instructional Designer role at the College of Western Idaho (CWI).
+- **Goal:** Help Olivia Koeppen get an interview and then an offer for the Instructional Designer role at the College of Western Idaho (CWI).
 - **Who reads it:** The CWI hiring committee. Likely an eLearning or instructional design manager, a faculty member or two, and HR. They are busy and will skim on a laptop, maybe a phone.
 - **How they get it:** A link in an email or application. One click opens it, with no login.
 - **What they should come away with in 60 seconds:**
@@ -18,12 +18,15 @@ The single source of truth for the portfolio site. When building any prototype o
 
 ## 2. Facts we know
 
+**Name:** Olivia Koeppen
+
 | Area | Fact | Status |
 |---|---|---|
-| Education | Bachelor's degree in English, [school], [year] | School and year unknown |
-| Teaching | High school teacher, 3 years, [subject: English?], [school], [years] | Details unknown |
-| Current role | Technical Records Specialist, Boise State University, School of Nursing | Known |
-| Current work | Refines and implements Canvas LMS courses for the School of Nursing | Known, needs specifics |
+| Education | Bachelor's degree in English, Boise State University, 2021 | Known (confirm B.A.) |
+| Teaching | Sophomore English teacher, Capital High School, Boise, 2021–2023 | Confirm dates. Earlier we said 3 years; the dates suggest 2 school years |
+| Current role | Technical Records Specialist, Boise State University, School of Nursing, ~2023–present (~3 years) | Known |
+| Current work | Prepares and launches Canvas course sites before each semester; triages course sites; troubleshoots and makes on-the-fly updates for faculty; coordinates cross-functionally with departments and teammates; the only person doing this for the whole School of Nursing; builds templates and checklists | Known. Course and faculty counts unknown ("a lot"; one of BSU's largest departments) |
+| Certifications | [She will fill in] | Unknown |
 | Location | Boise area, Idaho | Known |
 | Target | Instructional Designer, College of Western Idaho | Posting text needed |
 
@@ -35,9 +38,9 @@ The single source of truth for the portfolio site. When building any prototype o
 **The three steps (a real sequence, so a numbered or timeline layout fits):**
 
 1. **Teacher:** "I learned what makes students tune out or lean in."
-   Three years teaching high school [subject]. Planned units, wrote assessments and rubrics, adapted lessons for different learners.
+   Taught sophomore English at Capital High School in Boise (2021–2023). Planned units, wrote assessments and rubrics, adapted lessons for different learners.
 2. **Canvas specialist:** "I learned how college courses are built, and how to work with busy faculty."
-   At Boise State's School of Nursing, builds and refines Canvas courses, keeps them consistent across the program, and supports faculty [add specifics from section 6].
+   At Boise State's School of Nursing (~2023–present), prepares and launches Canvas course sites every semester, triages problems, and makes on-the-fly updates for faculty. The only person doing this for the whole school, so she coordinates across departments and teams. Built templates and checklists to keep it all consistent.
 3. **Instructional designer (next):** "Now I want to design the learning, not just build it."
    Projects in this portfolio show the design side: learning outcomes, alignment, faculty training, accessibility.
 
@@ -48,7 +51,7 @@ The single source of truth for the portfolio site. When building any prototype o
 
 ### 4.1 Opening
 - **Eyebrow:** Instructional Design Portfolio
-- **Name:** [Her Name]
+- **Name:** Olivia Koeppen
 - **One-liner (draft):** Former teacher and Canvas course builder helping college faculty create clear, accessible online learning.
 - **Contact line:** Boise, Idaho · [email] · [LinkedIn URL]
 
@@ -122,7 +125,7 @@ Shared design rules:
 - Readable on laptop and phone. Works in light and dark mode.
 - Accessible: real headings, strong contrast, alt text, keyboard-friendly. (An ID portfolio that fails accessibility is a red flag.)
 - No stock photos, no emoji, no animation beyond small touches.
-- Colors: [her preferences], default calm and neutral with one accent.
+- Colors: Professional and neutral. Avoid Boise State blue/orange and avoid CWI's colors. One muted accent.
 
 ## 6. Tech plan
 
@@ -131,15 +134,15 @@ Shared design rules:
 - **Optional:** Custom domain (~$12/yr), e.g. `[herlastname].design`.
 - **Work samples:** Rise/Storyline web exports and PDFs hosted in the same repository, so every link just opens.
 - **Search engines:** Hidden by default (noindex) until she wants it public.
-- **Editing:** Each project is one clearly marked HTML block. [Decide: who edits later, you or her?]
+- **Editing:** Each project is one clearly marked HTML block. Her husband maintains the site; Claude helps refine content.
 
 ## 7. Open questions
 
 ### You can probably answer these
-1. Her name as it should appear (with or without a middle name or maiden name)?
-2. What subject and grade levels did she teach, and where, roughly which years?
-3. Where is her English degree from, and what year?
-4. How long has she been at Boise State, and roughly how many courses and faculty does she support?
+1. ~~Name~~ Olivia Koeppen
+2. ~~Teaching~~ Sophomore English, Capital High School, 2021–2023 (confirm: 2 or 3 years?)
+3. ~~Degree~~ English, Boise State, 2021
+4. ~3 years at BSU; course and faculty counts still needed from her
 5. What does a normal week look like for her? What does she complain about or feel proud of at dinner?
 6. Has she ever built templates, how-to guides, or checklists for faculty?
 7. Does she already use any tools besides Canvas (Canva, Articulate, video tools, Google or Microsoft)?

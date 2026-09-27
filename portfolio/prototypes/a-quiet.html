@@ -1,0 +1,165 @@
+<title>Olivia Koeppen Portfolio · A</title>
+<!-- Prototype A: The quiet page. One column, reading-first. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Public+Sans:wght@400;600&display=swap">
+<style>
+  :root {
+    --bg: #f6f5f1; --surface: #fdfcfa; --ink: #22231f; --muted: #5d5f57; --line: #dedcd3;
+    --accent: #56633a; --accent-soft: #e9ecdf; --warn: #8a6516; --warn-soft: #f4ecd9;
+    --serif: "Newsreader", Georgia, serif; --sans: "Public Sans", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    color-scheme: dark; --bg: #171814; --surface: #1f201b; --ink: #e8e8e1; --muted: #a4a69b; --line: #33352d;
+    --accent: #b3c28c; --accent-soft: #283020; --warn: #dcb35f; --warn-soft: #332a17; } }
+  :root[data-theme="dark"] {
+    color-scheme: dark; --bg: #171814; --surface: #1f201b; --ink: #e8e8e1; --muted: #a4a69b; --line: #33352d;
+    --accent: #b3c28c; --accent-soft: #283020; --warn: #dcb35f; --warn-soft: #332a17; }
+
+  body { background: var(--bg); color: var(--ink); font: 17px/1.65 var(--sans); padding-inline: 20px; }
+  main { max-width: 720px; margin: 0 auto; padding-block: 72px 80px; display: grid; gap: 72px; }
+  h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.15; margin: 0; text-wrap: balance; }
+  h1 { font-size: clamp(2.4rem, 7vw, 3.4rem); letter-spacing: -.01em; }
+  h2 { font-size: 1.75rem; }
+  h3 { font-size: 1.3rem; }
+  p { margin: 0; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  section, header { display: grid; gap: 18px; }
+  .label { font-size: .78rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+  .lede { font-family: var(--serif); font-size: 1.4rem; line-height: 1.45; color: var(--ink); }
+  .meta { display: flex; flex-wrap: wrap; gap: 6px 22px; color: var(--muted); font-size: .95rem; }
+  header { padding-bottom: 48px; border-bottom: 1px solid var(--line); }
+
+  .path { list-style: none; padding: 0; margin: 0; display: grid; gap: 28px; }
+  .path li { display: grid; grid-template-columns: 7.5rem 1fr; gap: 4px 24px; }
+  .path .when { color: var(--muted); font-size: .9rem; font-variant-numeric: tabular-nums; padding-top: 3px; }
+  .path .body { display: grid; gap: 6px; }
+  .path .quote { font-family: var(--serif); font-style: italic; color: var(--accent); }
+  @media (max-width: 520px) { .path li { grid-template-columns: 1fr; } }
+
+  .beliefs { margin: 0; padding-left: 1.2rem; display: grid; gap: 8px; }
+
+  .project { display: grid; gap: 14px; padding-block: 32px; border-top: 1px solid var(--line); }
+  .project:last-child { border-bottom: 1px solid var(--line); }
+  .top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; align-items: baseline; }
+  .pill { font-size: .75rem; font-weight: 600; letter-spacing: .05em; padding: 2px 10px; border-radius: 999px; }
+  .done { background: var(--accent-soft); color: var(--accent); }
+  .planned { background: var(--warn-soft); color: var(--warn); }
+  .facts { color: var(--muted); font-size: .92rem; }
+  .facts b { color: var(--ink); font-weight: 600; }
+  .case { display: grid; gap: 10px; }
+  .case p b { font-weight: 600; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px 22px; font-weight: 600; font-size: .95rem; }
+
+  .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 24px; }
+  .cols ul { margin: 6px 0 0; padding-left: 1.1rem; color: var(--muted); }
+  .cols h3 { font-size: 1.05rem; }
+
+  .contact { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 28px; }
+  .row { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; }
+  .email { font-weight: 600; user-select: all; }
+  button { font: 600 .9rem var(--sans); padding: 6px 14px; border-radius: 6px; border: 1px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; }
+  .ph { background: var(--warn-soft); color: var(--warn); padding: 0 4px; border-radius: 3px; }
+  footer { color: var(--muted); font-size: .85rem; }
+</style>
+
+<main>
+  <header>
+    <span class="label">Instructional Design Portfolio</span>
+    <h1>Olivia Koeppen</h1>
+    <p class="lede">Former English teacher and Canvas course specialist, helping college faculty build clear, accessible online courses.</p>
+    <div class="meta"><span>Boise, Idaho</span><span class="ph">[email]</span><a href="#">LinkedIn</a></div>
+  </header>
+
+  <section>
+    <span class="label">My path</span>
+    <h2>From the classroom to course design</h2>
+    <ol class="path">
+      <li><span class="when">2021–2023</span><div class="body">
+        <h3>English teacher, Capital High School</h3>
+        <p>Taught sophomore English in Boise. Planned units, wrote assessments and rubrics, and adjusted lessons for students who learned in very different ways.</p>
+        <p class="quote">I learned what makes students tune out, and what makes them lean in.</p></div></li>
+      <li><span class="when">2023–now</span><div class="body">
+        <h3>Technical Records Specialist, Boise State School of Nursing</h3>
+        <p>I prepare and launch Canvas course sites for one of Boise State's largest schools, triage problems, and make fast updates for faculty mid-semester. I'm the only person doing this for the school, so I coordinate across departments to make sure faculty are ready on day one.</p>
+        <p class="quote">I learned how college courses are built, and how to support busy faculty.</p></div></li>
+      <li><span class="when">Next</span><div class="body">
+        <h3>Instructional designer</h3>
+        <p>Now I want to design the learning, not just build it. The projects below show that side of my work.</p></div></li>
+    </ol>
+    <p class="facts"><b>Education</b> · B.A. English, Boise State University, 2021</p>
+  </section>
+
+  <section>
+    <span class="label">How I design</span>
+    <h2>Start with what students should be able to do</h2>
+    <p>I work backward from clear learning goals, then build the activities, practice, and assessments that line up with them. I build accessibility in from the start, not as a fix at the end.</p>
+    <ul class="beliefs">
+      <li>Clear beats clever. Students should never have to hunt for what to do next.</li>
+      <li>Faculty are the subject experts. My job is to help that expertise reach students.</li>
+      <li>Accessible design is good design for everyone.</li>
+    </ul>
+  </section>
+
+  <section>
+    <span class="label">Projects</span>
+    <h2>Selected work</h2>
+    <div>
+      <article class="project">
+        <div class="top"><h3>Launching every nursing course, every semester</h3><span class="pill done">Complete</span></div>
+        <p class="facts"><b>Audience</b> Nursing faculty and students · <b>Role</b> Sole Canvas course specialist · <b>Tools</b> Canvas, templates, checklists</p>
+        <div class="case">
+          <p><b>Problem.</b> Every semester, <span class="ph">[number]</span> Canvas course sites need to be ready before day one, with one person responsible for all of them.</p>
+          <p><b>Approach.</b> I built course templates and a pre-semester checklist, set up a way to triage requests, and coordinated with <span class="ph">[teams]</span> so nothing fell through.</p>
+          <p><b>Result.</b> <span class="ph">[Courses launched on time, fewer faculty tickets, or a faculty quote.]</span></p>
+        </div>
+        <div class="links"><a href="#">Launch checklist (sample)</a><a href="#">Template walkthrough</a></div>
+      </article>
+      <article class="project">
+        <div class="top"><h3>From classroom to Canvas: redesigning an English unit</h3><span class="pill planned">In progress</span></div>
+        <p class="facts"><b>Audience</b> First-year college writers · <b>Role</b> Designer and builder · <b>Tools</b> Canvas, Rise · <b>Framework</b> Backward design</p>
+        <div class="case">
+          <p><b>Problem.</b> A unit I taught face to face at Capital High relied on in-class discussion and live feedback that don't carry over to online learning.</p>
+          <p><b>Approach.</b> I rewrote the goals as measurable outcomes, mapped every activity to them, and rebuilt the unit as a Canvas module with practice, feedback, and a clear weekly path.</p>
+          <p><b>Result.</b> <span class="ph">[Pilot feedback or Quality Matters self-review results.]</span></p>
+        </div>
+        <div class="links"><a href="#">View the module</a><a href="#">Alignment map</a></div>
+      </article>
+      <article class="project">
+        <div class="top"><h3>Accessible Canvas pages in 15 minutes</h3><span class="pill planned">Planned</span></div>
+        <p class="facts"><b>Audience</b> Faculty · <b>Role</b> Writer and designer · <b>Tools</b> Canvas, Canva · <b>Standard</b> WCAG 2.1</p>
+        <div class="case">
+          <p><b>Problem.</b> Faculty want accessible courses but don't have time for long trainings.</p>
+          <p><b>Approach.</b> A one-page guide covering the five fixes that matter most: headings, alt text, link text, color contrast, and captions.</p>
+          <p><b>Result.</b> <span class="ph">[Faculty feedback once shared.]</span></p>
+        </div>
+        <div class="links"><a href="#">Read the guide (PDF)</a></div>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <span class="label">Skills</span>
+    <div class="cols">
+      <div><h3>Design</h3><ul><li>Backward design, ADDIE</li><li>Learning outcomes</li><li>Assessments and rubrics</li></ul></div>
+      <div><h3>Build</h3><ul><li>Canvas LMS</li><li>Course templates</li><li><span class="ph">[other tools]</span></li></ul></div>
+      <div><h3>Quality</h3><ul><li>Accessibility (WCAG)</li><li>Quality Matters</li><li>Clear writing</li></ul></div>
+    </div>
+    <p class="facts"><b>Currently learning</b> · <span class="ph">[certifications and courses]</span></p>
+  </section>
+
+  <section class="contact">
+    <h2>Let's talk</h2>
+    <p>Thank you for looking at my work. I'd love to talk about supporting CWI faculty and students.</p>
+    <div class="row"><span class="email" id="email">[email@example.com]</span><button type="button" id="copy">Copy email</button><a href="#">Résumé (PDF)</a></div>
+  </section>
+  <footer>Prototype A · The quiet page</footer>
+</main>
+<script>
+document.getElementById('copy').addEventListener('click', function () {
+  var b = this, t = document.getElementById('email').textContent;
+  function sel(){ var r=document.createRange(); r.selectNodeContents(document.getElementById('email')); var s=getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent='Selected'; }
+  try { navigator.clipboard.writeText(t).then(function(){ b.textContent='Copied'; }, sel); } catch(e){ sel(); }
+});
+</script>

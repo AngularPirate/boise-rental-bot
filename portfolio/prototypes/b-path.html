@@ -1,0 +1,184 @@
+<title>Olivia Koeppen Portfolio · B</title>
+<!-- Prototype B: The path. The career timeline is the backbone; projects hang off the step they came from. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --bg: #f4f3f1; --surface: #ffffff; --ink: #241f22; --muted: #625a5e; --line: #dcd7d8;
+    --accent: #6b4a5b; --accent-soft: #efe7eb; --rail: #c9bfc4; --warn: #8a6516; --warn-soft: #f4ecd9;
+    --serif: "Source Serif 4", Georgia, serif; --sans: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    color-scheme: dark; --bg: #18161a; --surface: #211e22; --ink: #ece8ea; --muted: #aba2a7; --line: #38323a;
+    --accent: #d2a9bd; --accent-soft: #34262e; --rail: #4a4047; --warn: #dcb35f; --warn-soft: #332a17; } }
+  :root[data-theme="dark"] {
+    color-scheme: dark; --bg: #18161a; --surface: #211e22; --ink: #ece8ea; --muted: #aba2a7; --line: #38323a;
+    --accent: #d2a9bd; --accent-soft: #34262e; --rail: #4a4047; --warn: #dcb35f; --warn-soft: #332a17; }
+
+  body { background: var(--bg); color: var(--ink); font: 16.5px/1.65 var(--sans); padding-inline: 20px; }
+  main { max-width: 900px; margin: 0 auto; padding-block: 64px 80px; display: grid; gap: 64px; }
+  h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.15; margin: 0; text-wrap: balance; }
+  h1 { font-size: clamp(2.4rem, 6.5vw, 3.6rem); }
+  h2 { font-size: 1.7rem; }
+  h3 { font-size: 1.25rem; }
+  p { margin: 0; max-width: 64ch; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .label { font-size: .76rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+  .ph { background: var(--warn-soft); color: var(--warn); padding: 0 4px; border-radius: 3px; }
+
+  header { display: grid; gap: 18px; }
+  .lede { font-size: 1.2rem; color: var(--muted); max-width: 52ch; }
+  .meta { display: flex; flex-wrap: wrap; gap: 6px 22px; font-size: .95rem; color: var(--muted); }
+
+  /* Stepper summary */
+  .steps { list-style: none; margin: 8px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--line); border-radius: 10px; background: var(--surface); overflow: hidden; }
+  .steps li { padding: 18px 20px; display: grid; gap: 2px; border-left: 1px solid var(--line); }
+  .steps li:first-child { border-left: 0; }
+  .steps .n { font-size: .78rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .steps b { font-family: var(--serif); font-size: 1.1rem; font-weight: 600; }
+  .steps span:last-child { font-size: .9rem; color: var(--muted); }
+  .steps li.next { background: var(--accent-soft); }
+  .steps li.next b { color: var(--accent); }
+  @media (max-width: 640px) { .steps { grid-template-columns: 1fr; } .steps li { border-left: 0; border-top: 1px solid var(--line); } .steps li:first-child { border-top: 0; } }
+
+  /* Timeline */
+  .timeline { display: grid; gap: 0; }
+  .stage { display: grid; grid-template-columns: 2.25rem 1fr; gap: 0 20px; }
+  .rail { position: relative; display: flex; justify-content: center; }
+  .rail::before { content: ""; position: absolute; top: 0; bottom: 0; width: 2px; background: var(--rail); }
+  .stage:first-child .rail::before { top: 14px; }
+  .stage:last-child .rail::before { bottom: auto; height: 14px; }
+  .dot { position: relative; width: 2.25rem; height: 2.25rem; border-radius: 50%; background: var(--bg); border: 2px solid var(--rail); display: grid; place-items: center; font: 600 .9rem var(--sans); color: var(--muted); }
+  .stage.next .dot { border-color: var(--accent); background: var(--accent); color: var(--bg); }
+  .content { padding-bottom: 48px; display: grid; gap: 12px; }
+  .when { font-size: .88rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .quote { font-family: var(--serif); font-style: italic; font-size: 1.1rem; color: var(--accent); }
+
+  .project { margin-top: 8px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 22px; display: grid; gap: 12px; }
+  .project .top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 14px; align-items: baseline; }
+  .project h4 { margin: 0; font: 600 1.05rem var(--sans); }
+  .pill { font-size: .72rem; font-weight: 600; letter-spacing: .05em; padding: 2px 10px; border-radius: 999px; white-space: nowrap; }
+  .done { background: var(--accent-soft); color: var(--accent); }
+  .planned { background: var(--warn-soft); color: var(--warn); }
+  .facts { display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: .88rem; color: var(--muted); }
+  .facts b { color: var(--ink); font-weight: 500; }
+  .case { display: grid; gap: 8px; font-size: .97rem; }
+  .links { display: flex; flex-wrap: wrap; gap: 6px 20px; font-weight: 600; font-size: .92rem; }
+
+  .how { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+  .how ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 8px; }
+  @media (max-width: 640px) { .how { grid-template-columns: 1fr; } }
+  section { display: grid; gap: 16px; }
+
+  .contact { border-top: 1px solid var(--line); padding-top: 40px; }
+  .row { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; }
+  .email { font-weight: 600; user-select: all; }
+  button { font: 600 .9rem var(--sans); padding: 6px 14px; border-radius: 6px; border: 1px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; }
+  footer { color: var(--muted); font-size: .85rem; }
+</style>
+
+<main>
+  <header>
+    <span class="label">Instructional Design Portfolio</span>
+    <h1>Olivia Koeppen</h1>
+    <p class="lede">I started in the classroom, moved behind the scenes building college courses, and now I bring both together as an instructional designer.</p>
+    <div class="meta"><span>Boise, Idaho</span><span class="ph">[email]</span><a href="#">LinkedIn</a><span>B.A. English, Boise State, 2021</span></div>
+    <ol class="steps" aria-label="Career path summary">
+      <li><span class="n">1 · 2021–2023</span><b>Teacher</b><span>Sophomore English</span></li>
+      <li><span class="n">2 · 2023–now</span><b>Canvas specialist</b><span>BSU School of Nursing</span></li>
+      <li class="next"><span class="n">3 · Next</span><b>Instructional designer</b><span>Designing the learning</span></li>
+    </ol>
+  </header>
+
+  <section>
+    <span class="label">My path and work</span>
+    <div class="timeline">
+
+      <div class="stage">
+        <div class="rail"><span class="dot">1</span></div>
+        <div class="content">
+          <span class="when">2021–2023 · Capital High School, Boise</span>
+          <h2>English teacher</h2>
+          <p>Taught sophomore English. Planned units, wrote assessments and rubrics, and adjusted lessons for students who learned in very different ways.</p>
+          <p class="quote">I learned what makes students tune out, and what makes them lean in.</p>
+          <article class="project">
+            <div class="top"><h4>From classroom to Canvas: redesigning an English unit</h4><span class="pill planned">In progress</span></div>
+            <div class="facts"><span><b>Audience</b> First-year college writers</span><span><b>Tools</b> Canvas, Rise</span><span><b>Framework</b> Backward design</span></div>
+            <div class="case">
+              <p>A unit I taught face to face relied on discussion and live feedback that don't carry over online. I rewrote its goals as measurable outcomes, mapped every activity to them, and rebuilt it as a Canvas module with practice, feedback, and a clear weekly path.</p>
+              <p><b>Result.</b> <span class="ph">[Pilot feedback or Quality Matters self-review results.]</span></p>
+            </div>
+            <div class="links"><a href="#">View the module</a><a href="#">Alignment map</a></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="stage">
+        <div class="rail"><span class="dot">2</span></div>
+        <div class="content">
+          <span class="when">2023–now · Boise State University, School of Nursing</span>
+          <h2>Technical Records Specialist</h2>
+          <p>I prepare and launch Canvas course sites for one of Boise State's largest schools, triage problems, and make fast updates for faculty mid-semester. I'm the only person doing this for the school, so I coordinate across departments to make sure faculty are ready on day one.</p>
+          <p class="quote">I learned how college courses are built, and how to support busy faculty.</p>
+          <article class="project">
+            <div class="top"><h4>Launching every nursing course, every semester</h4><span class="pill done">Complete</span></div>
+            <div class="facts"><span><b>Audience</b> Nursing faculty and students</span><span><b>Role</b> Sole Canvas course specialist</span><span><b>Tools</b> Canvas, templates, checklists</span></div>
+            <div class="case">
+              <p>Every semester, <span class="ph">[number]</span> course sites need to be ready before day one. I built course templates and a pre-semester checklist, set up a way to triage requests, and coordinated with <span class="ph">[teams]</span> so nothing fell through.</p>
+              <p><b>Result.</b> <span class="ph">[Courses launched on time, fewer faculty tickets, or a faculty quote.]</span></p>
+            </div>
+            <div class="links"><a href="#">Launch checklist (sample)</a><a href="#">Template walkthrough</a></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="stage next">
+        <div class="rail"><span class="dot">3</span></div>
+        <div class="content">
+          <span class="when">Next</span>
+          <h2>Instructional designer</h2>
+          <p>Now I want to design the learning, not just build it. I'm growing that side of my work with faculty-facing projects and training.</p>
+          <article class="project">
+            <div class="top"><h4>Accessible Canvas pages in 15 minutes</h4><span class="pill planned">Planned</span></div>
+            <div class="facts"><span><b>Audience</b> Faculty</span><span><b>Tools</b> Canvas, Canva</span><span><b>Standard</b> WCAG 2.1</span></div>
+            <div class="case"><p>A one-page guide for busy faculty covering the five fixes that matter most: headings, alt text, link text, color contrast, and captions.</p></div>
+            <div class="links"><a href="#">Read the guide (PDF)</a></div>
+          </article>
+          <p class="facts"><span><b>Currently learning</b> <span class="ph">[certifications and courses]</span></span></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <span class="label">How I design</span>
+    <div class="how">
+      <div style="display:grid;gap:12px">
+        <h2>Start with what students should be able to do</h2>
+        <p>I work backward from clear learning goals, then build the activities, practice, and assessments that line up with them. I build accessibility in from the start.</p>
+      </div>
+      <ul>
+        <li>Clear beats clever. Students should never have to hunt for what to do next.</li>
+        <li>Faculty are the subject experts. My job is to help that expertise reach students.</li>
+        <li>Accessible design is good design for everyone.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Let's talk</h2>
+    <p>Thank you for looking at my work. I'd love to talk about supporting CWI faculty and students.</p>
+    <div class="row"><span class="email" id="email">[email@example.com]</span><button type="button" id="copy">Copy email</button><a href="#">Résumé (PDF)</a></div>
+  </section>
+  <footer>Prototype B · The path</footer>
+</main>
+<script>
+document.getElementById('copy').addEventListener('click', function () {
+  var b = this, t = document.getElementById('email').textContent;
+  function sel(){ var r=document.createRange(); r.selectNodeContents(document.getElementById('email')); var s=getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent='Selected'; }
+  try { navigator.clipboard.writeText(t).then(function(){ b.textContent='Copied'; }, sel); } catch(e){ sel(); }
+});
+</script>
