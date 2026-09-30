@@ -160,3 +160,13 @@ Shared design rules:
 3. Which unit from her teaching she'd enjoy redesigning for Project 1.
 4. Final say on the design philosophy lines and the one-line intro.
 5. A headshot, if she wants one.
+
+## 8. Current project list (supersedes 4.4)
+
+Real work only. No planned or hypothetical projects. Academic case-study voice: context, problem, approach, outcome, reflection.
+
+1. **Course Readiness for the School of Nursing** (BSU): templates, pre-term checklist, request triage.
+2. **Accessibility in Nursing Canvas Courses** (BSU): her real accessibility work. Details needed from her: what she fixed, which tools and standards she used, scale, outcomes.
+3. **Designing a Tenth-Grade English Unit** (Capital High): the real unit, plus a short paragraph on how she would adapt it for an online college course.
+
+The mid-term faculty support story moved out of the projects. Use it as an interview story instead.
