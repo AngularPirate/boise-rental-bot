@@ -113,13 +113,15 @@ Each project uses the same template:
 - "Thank you for taking the time to look at my work. I'd love to talk about how I can support CWI faculty and students."
 - Email shown as text with a Copy button. LinkedIn link. Résumé PDF link.
 
-## 5. Design directions (prototype all three, then pick one)
+## 5. Design directions
 
-Same content in all three. Only layout and visual style change.
+Still in the running: **A** and **C**. B is retired (kept for reference only).
 
 - **A. The quiet page:** One column, reading-first. Closest to Hannah Jardine's portfolio, cleaner type and spacing.
-- **B. The path:** A visible timeline (teacher → Canvas specialist → designer) is the backbone; each project hangs off the step it came from.
+- ~~**B. The path:**~~ Retired. A visible timeline with projects hanging off each step.
 - **C. The course:** Laid out like a well-designed course: a welcome, "what you'll see," projects as modules. Shows the skill she's applying for. Must stay understated.
+
+**Versioning rule:** Never edit a published prototype in place. Every round of edits becomes a new file (`a-quiet-v2.html`, `c-course-v2.html`, …) with its own link, logged in `prototypes/README.md`, so earlier versions stay available to compare.
 
 Shared design rules:
 - Readable on laptop and phone. Works in light and dark mode.
