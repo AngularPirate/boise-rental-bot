@@ -1,0 +1,22 @@
+{
+  "_readme": "Per-job tailoring. Visit index.html?for=<key>. Unknown keys fall back to default. To add a target, copy a block.",
+  "default": {
+    "label": "",
+    "headline": "I build product with AI every day, from the first sketch to the <em>merged pull request</em>.",
+    "focus": "",
+    "featured": ["quality-gate", "ai-assistant", "progress-model", "pm-os"],
+    "skills": ["AI Product", "Design", "Data & Analytics"],
+    "why": null
+  },
+  "customerio": {
+    "label": "Customer.io",
+    "headline": "I build product with AI every day, and I decide when <em>AI output is ready for customers</em>.",
+    "focus": "Tailored for Customer.io: AI-written messages, approval flows, and when a human stays in the loop.",
+    "featured": ["quality-gate", "ai-assistant", "pm-os", "progress-model"],
+    "skills": ["AI Product", "Data & Analytics", "Engineering Collaboration"],
+    "why": {
+      "title": "Why Customer.io",
+      "body": "Your agent drafts messages that your customers' customers will read. Deciding when that kind of output can go out without a human is the call I've already made at work, on 54,000+ real outputs. Gatekeeper, the side project I'm building now, asks the same question for AI-drafted lifecycle messages."
+    }
+  }
+}

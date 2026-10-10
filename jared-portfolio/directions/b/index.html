@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jared Brodd, Product Manager</title>
+<meta name="description" content="Jared Brodd is a product manager who works AI-native by default. Try the quality gate: decide which AI-drafted messages go out.">
+<link rel="canonical" href="./">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<script defer src="js/tailor.js"></script>
+<script defer src="js/sorter.js"></script>
+<script defer src="js/site.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap top__row">
+    <a class="brand" href="./" data-keep-for>Jared Brodd</a>
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#how">How I work</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#building">Building</a></li>
+        <li><a class="nav__cta" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero__intro">
+      <h1 id="hero-title" class="hero__title" data-tailor="headline">I build product with AI every day, from the first sketch to the <em>merged pull request</em>.</h1>
+      <div class="hero__side">
+        <p class="hero__focus" data-tailor="focus" hidden></p>
+        <p class="hero__lede">I'm a product manager who works AI-native by default. I design the interface, write the spec, check it against production data, and open the PR myself, and I've built the AI workflows that let the rest of my team work the same way. Lately that's meant shipping an in-product AI assistant and deciding when AI output is good enough to put in front of customers.</p>
+        <div class="actions">
+          <a class="btn btn--ink" href="case-quality-gate.html" data-keep-for>Read the case study</a>
+          <a class="btn btn--line" href="mailto:jaredbrodd@gmail.com">Email me</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <div class="sorter" id="sorter" aria-labelledby="sorter-title">
+        <div class="sorter__head">
+          <h2 id="sorter-title" class="sorter__title">You run the gate.</h2>
+          <p class="sorter__intro">An AI drafted 200 customer messages. Each one has a quality score. Set where the gate blocks and where it lets messages go out on their own. Everything in between waits for a person.</p>
+        </div>
+
+        <div class="controls">
+          <div class="range">
+            <label for="th-block">Block anything scoring below <output id="out-block" for="th-block">30</output></label>
+            <input type="range" id="th-block" min="0" max="100" step="1" value="30">
+          </div>
+          <div class="range">
+            <label for="th-send">Auto-send anything scoring <output id="out-send" for="th-send">60</output> or above</label>
+            <input type="range" id="th-send" min="0" max="100" step="1" value="60">
+          </div>
+          <div class="presets" role="group" aria-label="Try a setting">
+            <button type="button" data-preset="0,0">Ship everything</button>
+            <button type="button" data-preset="0,100">Review everything</button>
+            <button type="button" data-preset="45,70">Staged gate</button>
+          </div>
+        </div>
+
+        <div class="bins">
+          <section class="bin bin--send" aria-labelledby="bin-send-t">
+            <header class="bin__head">
+              <h3 id="bin-send-t">Auto-send</h3>
+              <p class="bin__count"><span data-count="send">0</span> messages</p>
+            </header>
+            <div class="bin__tiles" data-bin="send" aria-hidden="true"></div>
+            <button type="button" class="bin__peek" data-peek="send">Show one from this pile</button>
+          </section>
+          <section class="bin bin--review" aria-labelledby="bin-review-t">
+            <header class="bin__head">
+              <h3 id="bin-review-t">Human review</h3>
+              <p class="bin__count"><span data-count="review">0</span> messages</p>
+            </header>
+            <div class="bin__tiles" data-bin="review" aria-hidden="true"></div>
+            <button type="button" class="bin__peek" data-peek="review">Show one from this pile</button>
+          </section>
+          <section class="bin bin--block" aria-labelledby="bin-block-t">
+            <header class="bin__head">
+              <h3 id="bin-block-t">Block</h3>
+              <p class="bin__count"><span data-count="block">0</span> messages</p>
+            </header>
+            <div class="bin__tiles" data-bin="block" aria-hidden="true"></div>
+            <button type="button" class="bin__peek" data-peek="block">Show one from this pile</button>
+          </section>
+        </div>
+
+        <div class="readout">
+          <dl class="meters">
+            <div class="meter meter--bad"><dt>Bad messages sent with no human check</dt><dd data-stat="escaped">0</dd></div>
+            <div class="meter"><dt>Messages a person has to read</dt><dd data-stat="review">0</dd></div>
+            <div class="meter"><dt>Good messages blocked</dt><dd data-stat="lost">0</dd></div>
+          </dl>
+          <p class="verdict" id="verdict" aria-live="polite"></p>
+        </div>
+
+        <div class="letter" id="letter" hidden>
+          <div class="letter__meta"><span class="letter__score" id="l-score"></span><span id="l-type"></span><span class="letter__flag" id="l-flag"></span></div>
+          <p class="letter__body" id="l-body"></p>
+          <p class="letter__why" id="l-why"></p>
+        </div>
+
+        <p class="sorter__note"><strong>Synthetic data.</strong> 200 made-up messages for a made-up app; the scores and the good/bad labels are generated. Tiles with a cross are messages a careful reader would call bad. At work I made this call on 54,000+ real AI outputs. <a href="case-quality-gate.html" data-keep-for>How that went</a>.</p>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <ul class="proof" aria-label="Key figures">
+        <li><strong>3,600+</strong> active clients on the platform I own</li>
+        <li><strong>223</strong> peak daily users of the AI assistant I shipped</li>
+        <li><strong>54,000+</strong> AI outputs reviewed before a launch call</li>
+        <li><strong>$150K ARR</strong> and 100% retention, 0 to 1</li>
+      </ul>
+    </div>
+  </section>
+
+  <aside class="wrap why" data-tailor="why" hidden aria-labelledby="why-title">
+    <div class="why__card">
+      <h2 id="why-title" data-why-title></h2>
+      <p data-why-body></p>
+    </div>
+  </aside>
+
+  <section class="work" id="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <h2 id="work-title" class="title">Selected work</h2>
+      <p class="lede">Four projects from a B2B coaching platform. No screens, no client data: every visual here is redrawn with synthetic data.</p>
+      <ul class="cards" data-featured>
+        <li class="card card--lead" data-case="quality-gate">
+          <h3><a href="case-quality-gate.html" data-keep-for>The 54,000-output read before a launch call</a></h3>
+          <p>I reviewed 54,000+ AI outputs across 3,400+ clients and recommended a staged rollout behind an explicit quality gate instead of a full launch.</p>
+          <p class="card__foot"><span class="chip">Evaluation</span><span class="chip">Rollout</span><span class="chip">SQL</span><span class="card__go">Read it</span></p>
+        </li>
+        <li class="card" data-case="ai-assistant">
+          <h3>An AI coaching assistant people stay in</h3>
+          <p>100–120 daily users, a peak of 223, and working sessions that run 20 to 30+ minutes.</p>
+          <p class="card__foot"><span class="chip">Shipped AI</span><span class="chip">Conversational UX</span><span class="card__soon">Write-up soon</span></p>
+        </li>
+        <li class="card" data-case="progress-model">
+          <h3>One progress model, four data sources</h3>
+          <p>A spec that reconciled four production sources into one client view, with 12 contested decisions closed before the build.</p>
+          <p class="card__foot"><span class="chip">Data modeling</span><span class="chip">Spec</span><span class="card__soon">Write-up soon</span></p>
+        </li>
+        <li class="card" data-case="pm-os">
+          <h3>35+ skills and agents, handed off</h3>
+          <p>My workflow from discovery to release notes, turned into skills and agents a second team member now runs without me.</p>
+          <p class="card__foot"><span class="chip">Claude Code</span><span class="chip">Agents</span><span class="card__soon">Write-up soon</span></p>
+        </li>
+      </ul>
+      <p class="also">Also: I led the replacement when the model behind our production summaries was retired, including the fallback plan. And at Vessel I took an assessment platform from 0 to 1: $350K revenue, $150K ARR, 6 enterprise clients, 100% retention.</p>
+    </div>
+  </section>
+
+  <section class="how" id="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <h2 id="how-title" class="title">How I work</h2>
+      <p class="lede">AI is in every step. A person signs off at every step too. Pick a lens.</p>
+      <div class="lens" role="radiogroup" aria-label="Lens">
+        <label><input type="radio" name="lens" value="all" checked> <span>Everything</span></label>
+        <label><input type="radio" name="lens" value="ai"> <span>What AI does</span></label>
+        <label><input type="radio" name="lens" value="me"> <span>What I check</span></label>
+      </div>
+      <ol class="steps" id="steps" data-lens="all">
+        <li class="step"><h3>Discover</h3><p class="row row--ai">Skills prep each interview guide and score every call the same way.</p><p class="row row--me">I lead the interviews, from a 600+ client panel I stratified by tier, tenure, and engagement.</p></li>
+        <li class="step"><h3>Sketch</h3><p class="row row--ai">AI design tools and Claude Code get a working prototype onto real data.</p><p class="row row--me">I'm the team's designer. Every design gets a scored critique before it moves.</p></li>
+        <li class="step"><h3>Spec</h3><p class="row row--ai">A spec skill turns interview notes into a first draft I argue with.</p><p class="row row--me">I lock the contested decisions with engineering before the build, not during it.</p></li>
+        <li class="step"><h3>Data</h3><p class="row row--ai">Agents help write and sanity-check SQL against production.</p><p class="row row--me">I validate the math against real clients myself before anyone builds on it.</p></li>
+        <li class="step"><h3>Pull request</h3><p class="row row--ai">I build UI changes with Claude Code against the QA environment.</p><p class="row row--me">I open the PR; engineers review, merge, and ship under their usual standards.</p></li>
+        <li class="step"><h3>Ship</h3><p class="row row--ai">Release and reporting skills draft the notes, guides, and readout.</p><p class="row row--me">I present releases live to 150+ coaches and to cross-functional leadership.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="exp" id="experience" aria-labelledby="exp-title">
+    <div class="wrap exp__grid">
+      <h2 id="exp-title" class="title">Experience</h2>
+      <ol class="jobs">
+        <li><span class="jobs__when">Now</span><div><h3>Product Manager, B2B coaching platform</h3><p>3,600+ active clients and their coaches. I own the AI and coaching-intelligence roadmap, design the product, and ship with two tech leads and eight engineers.</p></div></li>
+        <li><span class="jobs__when">2023</span><div><h3>Product Manager, Vessel</h3><p>A B2B assessment platform from 0 to 1, an AI recommendation engine, and onboarding time cut by 50%.</p></div></li>
+        <li><span class="jobs__when">2022–23</span><div><h3>Product Owner, Education &amp; Content, Vessel</h3><p>Training programs for manufacturers; education revenue up 3x in three months.</p></div></li>
+        <li><span class="jobs__when">2021–23</span><div><h3>Logistics Solutions Lead, Vessel</h3><p>Forecasting tools that cut landed cost by 30%.</p></div></li>
+        <li><span class="jobs__when">2020–21</span><div><h3>Program Manager, SMHeuristics</h3><p>Market research and analytics for a supply chain consulting service.</p></div></li>
+        <li><span class="jobs__when">Degree</span><div><h3>B.S. Business Administration, Boise State</h3><p>Entrepreneurship Management.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="building" id="building" aria-labelledby="build-title">
+    <div class="wrap">
+      <h2 id="build-title" class="title">Building in public</h2>
+      <div class="build__grid">
+        <article class="gk">
+          <h3 class="gk__title">Gatekeeper</h3>
+          <p class="stamp stamp--live">In progress</p>
+          <p>The toy at the top of this page, grown up. Synthetic customers move through a made-up SaaS trial. A model drafts onboarding nudges and win-backs. A rubric scores each on brand voice, grounding in the customer's data, personalization, compliance, and tone, then routes it to auto-send, human review, or block, with a staged-rollout view by segment.</p>
+          <p>The demo runs on precomputed outputs, so it needs no backend or API key. The repo will carry the script that regenerates them.</p>
+        </article>
+        <div class="roadmap">
+          <h3 class="roadmap__title">Next up</h3>
+          <ol>
+            <li><strong>pm-os-starter.</strong> Public Claude Code skills: PRD from interview notes, QA plan from spec, release notes, SQL sanity check.</li>
+            <li><strong>Lifecycle analytics MCP server.</strong> Read-only, permission-scoped tools over a synthetic event store.</li>
+            <li><strong>Summarization eval harness.</strong> Compare models on cost, latency, and quality, with a fallback policy.</li>
+            <li><strong>Voice logging prototype.</strong> "Ran 3 miles, skipped stretching" becomes a structured log with a confirm step.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" aria-labelledby="skills-title">
+    <div class="wrap">
+      <h2 id="skills-title" class="title">Toolkit</h2>
+      <ul class="skillset">
+        <li data-skill="AI Product"><h3>AI product</h3><p>Scoping and instrumentation, model and vendor evaluation, quality gates and human review, agentic and natural-language interfaces.</p></li>
+        <li data-skill="Design"><h3>Design</h3><p>Figma, design-system upkeep, HTML and React prototypes, scored critique, v0, Bolt, Lovable.</p></li>
+        <li data-skill="Data & Analytics"><h3>Data</h3><p>SQL on PostgreSQL, Metabase, Pendo, Microsoft Clarity, metric definition, post-launch audits.</p></li>
+        <li data-skill="Engineering Collaboration"><h3>Engineering</h3><p>Git pull requests, local QA environments, feature flags, QA planning, vendor management.</p></li>
+        <li data-skill="AI Tooling"><h3>AI tooling</h3><p>Claude Code, custom skills and agents, MCP integrations, prompt engineering.</p></li>
+        <li data-skill="Discovery & Research"><h3>Research</h3><p>1:1 interviews, panel stratification, JTBD synthesis, research repositories.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap contact__grid">
+      <div>
+        <h2 id="contact-title" class="contact__title">Say hi.</h2>
+        <p>I'm in Boise, and when I'm not working I'm usually somewhere in Idaho's backcountry. I co-hosted an AI prototyping workshop for Boise's product meetup, and I like talking shop about how teams build with AI.</p>
+      </div>
+      <ul class="contact__list">
+        <li><a href="mailto:jaredbrodd@gmail.com">jaredbrodd@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/jared-brodd" rel="me">LinkedIn</a></li>
+        <li><span class="soon">GitHub (coming soon)</span></li>
+      </ul>
+    </div>
+  </section>
+</main>
+<footer class="foot"><div class="wrap"><p>Details are generalized and visuals recreated with synthetic data to respect confidentiality.</p></div></footer>
+</body>
+</html>

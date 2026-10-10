@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jared Brodd, Product Manager</title>
+<meta name="description" content="Jared Brodd is a product manager who works AI-native by default: design, spec, production data, and the pull request.">
+<link rel="canonical" href="./">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Public+Sans:ital,wght@0,400..700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<script defer src="js/tailor.js"></script>
+<script defer src="js/map.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="wrap masthead__row">
+    <a class="brand" href="./" data-keep-for>Jared Brodd</a>
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="#route">How I work</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#building">Building</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <p class="coords" aria-hidden="true">43.615° N · 116.202° W</p>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero__grid">
+      <div class="hero__text">
+        <h1 id="hero-title" class="hero__title" data-tailor="headline">I build product with AI every day, from the first sketch to the <em>merged pull request</em>.</h1>
+        <p class="hero__focus" data-tailor="focus" hidden></p>
+        <p class="hero__lede">I'm a product manager who works AI-native by default. I design the interface, write the spec, check it against production data, and open the PR myself, and I've built the AI workflows that let the rest of my team work the same way. Lately that's meant shipping an in-product AI assistant and deciding when AI output is good enough to put in front of customers.</p>
+        <div class="actions">
+          <a class="btn btn--route" href="case-quality-gate.html" data-keep-for>Read the quality-gate case study</a>
+          <a class="btn btn--plain" href="mailto:jaredbrodd@gmail.com">Email me</a>
+        </div>
+        <p class="hero__meta">Product manager in Boise, Idaho</p>
+      </div>
+
+      <figure class="map" id="route" aria-labelledby="route-title">
+        <div class="map__frame">
+          <svg class="map__svg" viewBox="0 0 800 560" role="img" aria-labelledby="map-svg-title map-svg-desc">
+            <title id="map-svg-title">How I work, drawn as a route</title>
+            <desc id="map-svg-desc">A contour map with a route through six waypoints: Discover, Sketch, Spec, Data, Pull request, Ship. The same waypoints are listed as buttons below the map.</desc>
+            <rect class="map__ground" width="800" height="560"/>
+            <g class="map__contours" id="contours"></g>
+            <path class="map__stream" d="M-10 470 C 80 450, 120 500, 200 488 S 330 430, 380 452 S 470 530, 560 520 S 700 470, 810 492"/>
+            <path class="map__route-shadow" id="route-shadow" d=""/>
+            <path class="map__route" id="route-path" d=""/>
+            <g id="waypoints"></g>
+            <g class="map__grid" aria-hidden="true">
+              <path d="M200 0v8M400 0v8M600 0v8M200 560v-8M400 560v-8M600 560v-8M0 140h8M0 280h8M0 420h8M800 140h-8M800 280h-8M800 420h-8"/>
+            </g>
+          </svg>
+          <p class="map__stamp">Survey of a working week · contours generated in your browser</p>
+        </div>
+        <figcaption class="map__caption">
+          <h2 id="route-title" class="section-title section-title--small">How I work</h2>
+          <p>One route, six waypoints. Pick one to read the field notes.</p>
+        </figcaption>
+        <ol class="waylist" id="waylist" aria-label="Waypoints"></ol>
+        <div class="notes" id="notes" aria-live="polite"></div>
+      </figure>
+    </div>
+
+    <div class="wrap">
+      <dl class="legend" aria-label="Key figures">
+        <div class="legend__item"><dt><span class="sym sym--peak" aria-hidden="true"></span>Active clients on the platform I own</dt><dd>3,600+</dd></div>
+        <div class="legend__item"><dt><span class="sym sym--route" aria-hidden="true"></span>Peak daily users of the AI assistant I shipped</dt><dd>223</dd></div>
+        <div class="legend__item"><dt><span class="sym sym--water" aria-hidden="true"></span>AI outputs I reviewed before a launch call</dt><dd>54,000+</dd></div>
+        <div class="legend__item"><dt><span class="sym sym--camp" aria-hidden="true"></span>ARR from a 0→1 product, 100% retention</dt><dd>$150K</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <aside class="wrap why" data-tailor="why" hidden aria-labelledby="why-title">
+    <h2 id="why-title" class="why__title" data-why-title></h2>
+    <p data-why-body></p>
+  </aside>
+
+  <section class="work" id="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <h2 id="work-title" class="section-title">Selected work</h2>
+      <p class="section-lede">Four projects from a B2B coaching platform, told without its screens or data. Every visual on this site is redrawn with synthetic data.</p>
+      <ul class="sheets" data-featured>
+        <li class="sheet sheet--lead" data-case="quality-gate">
+          <h3 class="sheet__title"><a href="case-quality-gate.html" data-keep-for>Reading 54,000 AI outputs before the launch call</a></h3>
+          <p>I reviewed 54,000+ AI outputs across 3,400+ clients and recommended a staged rollout behind an explicit quality gate instead of a full launch.</p>
+          <ul class="tags"><li>Evaluation</li><li>Rollout strategy</li><li>SQL</li></ul>
+          <p class="sheet__more">Full case study →</p>
+        </li>
+        <li class="sheet" data-case="ai-assistant">
+          <h3 class="sheet__title">An AI coaching assistant people stay in</h3>
+          <p>An in-product assistant averaging 100–120 daily users, with a peak of 223, in working sessions that run 20 to 30+ minutes.</p>
+          <ul class="tags"><li>Conversational UX</li><li>Roadmap ownership</li></ul>
+          <p class="sheet__more sheet__more--quiet">Write-up in progress</p>
+        </li>
+        <li class="sheet" data-case="progress-model">
+          <h3 class="sheet__title">One progress model from four data sources</h3>
+          <p>I wrote the spec that reconciled four production sources into one client view, checked the math against real clients, and locked 12 contested decisions before the build.</p>
+          <ul class="tags"><li>Data modeling</li><li>Spec</li><li>PostgreSQL</li></ul>
+          <p class="sheet__more sheet__more--quiet">Write-up in progress</p>
+        </li>
+        <li class="sheet" data-case="pm-os">
+          <h3 class="sheet__title">35+ skills and agents a teammate runs without me</h3>
+          <p>I turned my workflow, from discovery to release notes, into 35+ skills and agents, then wrote it down well enough that a second team member runs it independently.</p>
+          <ul class="tags"><li>Claude Code</li><li>Agents</li><li>Onboarding</li></ul>
+          <p class="sheet__more sheet__more--quiet">Write-up in progress</p>
+        </li>
+      </ul>
+      <p class="also">Also: when the model behind our production summaries was retired, I led the replacement and set the fallback plan with engineering. Before that, at Vessel, I took an assessment platform from 0 to 1: $350K revenue, $150K ARR, 6 enterprise clients, 100% retention.</p>
+    </div>
+  </section>
+
+  <section class="experience" id="experience" aria-labelledby="exp-title">
+    <div class="wrap exp__grid">
+      <h2 id="exp-title" class="section-title">Experience</h2>
+      <ol class="trail">
+        <li class="trail__stop trail__stop--now">
+          <h3 class="trail__role">Product Manager, B2B coaching platform</h3>
+          <p class="trail__when">Now</p>
+          <p>Own a platform serving 3,600+ active clients and their coaches. AI and coaching-intelligence roadmap, product design, and hands-on delivery with two tech leads and an eight-person engineering team.</p>
+        </li>
+        <li class="trail__stop">
+          <h3 class="trail__role">Product Manager, Vessel</h3>
+          <p class="trail__when">2023</p>
+          <p>Took a B2B assessment platform from 0 to 1. Led an AI recommendation engine and cut onboarding implementation time by 50%.</p>
+        </li>
+        <li class="trail__stop">
+          <h3 class="trail__role">Product Owner, Education &amp; Content, Vessel</h3>
+          <p class="trail__when">2022–2023</p>
+          <p>Launched training programs for manufacturers; education revenue grew 3x in three months.</p>
+        </li>
+        <li class="trail__stop">
+          <h3 class="trail__role">Logistics Solutions Lead, Vessel</h3>
+          <p class="trail__when">2021–2023</p>
+          <p>Built forecasting tools that cut landed cost by 30%.</p>
+        </li>
+        <li class="trail__stop">
+          <h3 class="trail__role">Program Manager, SMHeuristics</h3>
+          <p class="trail__when">2020–2021</p>
+          <p>Market research and analytics for a supply chain consulting service.</p>
+        </li>
+        <li class="trail__stop trail__stop--base">
+          <h3 class="trail__role">B.S. Business Administration, Boise State</h3>
+          <p class="trail__when">Base camp</p>
+          <p>Entrepreneurship Management.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="building" id="building" aria-labelledby="build-title">
+    <div class="wrap">
+      <h2 id="build-title" class="section-title">Building in public</h2>
+      <p class="section-lede">Solid line: in progress. Dashed line: planned. One public piece every two weeks.</p>
+      <div class="build__grid">
+        <article class="project">
+          <h3 class="project__title">Gatekeeper <span class="status status--live"><span class="dot" aria-hidden="true"></span>In progress</span></h3>
+          <p>A quality gate for AI-drafted lifecycle messages. Synthetic customers move through a made-up SaaS trial. A model drafts onboarding nudges and win-backs, a rubric scores each one on voice, grounding, personalization, compliance, and tone, and the gate routes it to auto-send, human review, or block. The demo runs on precomputed outputs, so it needs no backend or API key.</p>
+          <p class="project__q">The question it answers: where do you put the human in the loop for AI-written messages, and how do you measure it?</p>
+        </article>
+        <ol class="planned" aria-label="Planned projects">
+          <li><h3>pm-os-starter</h3><p>Public Claude Code skills: PRD from interview notes, QA plan from spec, release notes, SQL sanity check.</p></li>
+          <li><h3>Lifecycle analytics MCP server</h3><p>Read-only, permission-scoped tools over a synthetic event store.</p></li>
+          <li><h3>Summarization eval harness</h3><p>Compare models on cost, latency, and quality, with a fallback policy.</p></li>
+          <li><h3>Voice logging prototype</h3><p>"Ran 3 miles, skipped stretching" becomes a structured log with a confirm step.</p></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills" aria-labelledby="skills-title">
+    <div class="wrap">
+      <h2 id="skills-title" class="section-title">Toolkit</h2>
+      <ul class="skillset">
+        <li data-skill="AI Product"><h3>AI product</h3><p>Feature scoping and instrumentation, model and vendor evaluation, quality gates and human review, agentic and natural-language interfaces.</p></li>
+        <li data-skill="Design"><h3>Design</h3><p>Figma, design-system upkeep, HTML and React prototypes, scored design critique, v0, Bolt, Lovable.</p></li>
+        <li data-skill="Data & Analytics"><h3>Data</h3><p>SQL on PostgreSQL, Metabase, Pendo, Microsoft Clarity, metric definition, post-launch audits.</p></li>
+        <li data-skill="Engineering Collaboration"><h3>Engineering</h3><p>Git pull requests, local QA environments, feature flags, QA planning, vendor management.</p></li>
+        <li data-skill="AI Tooling"><h3>AI tooling</h3><p>Claude Code, custom skills and agents, MCP integrations, prompt engineering.</p></li>
+        <li data-skill="Discovery & Research"><h3>Research</h3><p>1:1 interviews, panel stratification, JTBD synthesis, research repositories.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap contact__grid">
+      <div>
+        <h2 id="contact-title" class="section-title">Find me</h2>
+        <p>I live in Boise. When I'm not working I'm somewhere in Idaho's backcountry. I also co-hosted an AI prototyping workshop for Boise's product meetup, and I'm always up for comparing notes on how teams build with AI.</p>
+      </div>
+      <ul class="contact__list">
+        <li><a href="mailto:jaredbrodd@gmail.com">jaredbrodd@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/jared-brodd" rel="me">LinkedIn</a></li>
+        <li><span class="soon">GitHub (coming soon)</span></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>Details are generalized and visuals recreated with synthetic data to respect confidentiality. Map terrain is procedural, not a real place.</p>
+  </div>
+</footer>
+</body>
+</html>

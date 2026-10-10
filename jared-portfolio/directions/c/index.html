@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jared Brodd, Product Manager</title>
+<meta name="description" content="Jared Brodd builds product with AI every day, from the first sketch to the merged pull request.">
+<link rel="canonical" href="./">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,400..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<script defer src="js/tailor.js"></script>
+<script defer src="js/console.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="mast">
+  <div class="wrap mast__row">
+    <a class="mast__name" href="./" data-keep-for>Jared Brodd</a>
+    <p class="mast__issue">Fall 2026 · Product, built AI-native</p>
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#console">Console</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#building">Building</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="cover" aria-labelledby="hero-title">
+    <div class="cover__dots" aria-hidden="true"></div>
+    <div class="wrap cover__grid">
+      <h1 id="hero-title" class="cover__title" data-tailor="headline">I build product with AI every day, from the first sketch to the <em>merged pull request</em>.</h1>
+      <div class="cover__lines">
+        <p class="cover__focus" data-tailor="focus" hidden></p>
+        <p class="cover__lede">I'm a product manager who works AI-native by default. I design the interface, write the spec, check it against production data, and open the PR myself, and I've built the AI workflows that let the rest of my team work the same way. Lately that's meant shipping an in-product AI assistant and deciding when AI output is good enough to put in front of customers.</p>
+        <ul class="coverlines">
+          <li><a href="case-quality-gate.html" data-keep-for><strong>54,000 outputs.</strong> Why I didn't fully launch.</a></li>
+          <li><a href="#console"><strong>The console.</strong> A slice of my 35+ agents.</a></li>
+          <li><a href="#building"><strong>Gatekeeper.</strong> What I'm building now.</a></li>
+        </ul>
+        <p class="cover__cta"><a class="btn" href="mailto:jaredbrodd@gmail.com">Email me</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="numbers" aria-label="Key figures">
+    <div class="wrap">
+      <ul class="numbers__row">
+        <li><span>3,600+</span> active clients on the platform I own</li>
+        <li><span>223</span> peak daily users of the AI assistant I shipped</li>
+        <li><span>54,000+</span> AI outputs reviewed before a launch call</li>
+        <li><span>$150K</span> ARR at 100% retention, 0 to 1</li>
+      </ul>
+    </div>
+  </section>
+
+  <aside class="wrap why" data-tailor="why" hidden aria-labelledby="why-title">
+    <h2 id="why-title" data-why-title></h2>
+    <p data-why-body></p>
+  </aside>
+
+  <section class="work" id="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <h2 id="work-title" class="big">Selected work</h2>
+      <p class="standfirst">Four stories from a B2B coaching platform, told without its screens or its data. Visuals are redrawn with synthetic data.</p>
+      <ol class="features" data-featured>
+        <li class="feature feature--lead" data-case="quality-gate">
+          <h3 class="feature__title"><a href="case-quality-gate.html" data-keep-for>I read 54,000 AI outputs, then argued against a full launch</a></h3>
+          <p class="feature__dek">54,000+ outputs across 3,400+ clients, an explicit quality gate, and a staged rollout instead of flipping it on for everyone.</p>
+          <p class="feature__meta">Evaluation · Rollout · SQL · <span class="feature__go">Read the story</span></p>
+        </li>
+        <li class="feature" data-case="ai-assistant">
+          <h3 class="feature__title">The assistant people stay in</h3>
+          <p class="feature__dek">An in-product AI coaching assistant: 100–120 daily users, a peak of 223, sessions of 20 to 30+ minutes.</p>
+          <p class="feature__meta">Shipped AI · Conversational UX · <em>Story in a future issue</em></p>
+        </li>
+        <li class="feature" data-case="progress-model">
+          <h3 class="feature__title">Four sources, one truth</h3>
+          <p class="feature__dek">A spec that reconciled four production data sources into one client view and settled 12 contested decisions before the build.</p>
+          <p class="feature__meta">Data modeling · Spec · <em>Story in a future issue</em></p>
+        </li>
+        <li class="feature" data-case="pm-os">
+          <h3 class="feature__title">An operating system you can hand off</h3>
+          <p class="feature__dek">35+ skills and agents from discovery to release notes, written down well enough that a second team member runs them without me.</p>
+          <p class="feature__meta">Claude Code · Agents · <em>Story in a future issue</em></p>
+        </li>
+      </ol>
+      <p class="also">Also in this issue: I led the replacement when the model behind our production summaries was retired, fallback plan included. And at Vessel, I took an assessment platform from 0 to 1: $350K revenue, $150K ARR, 6 enterprise clients, 100% retention.</p>
+    </div>
+  </section>
+
+  <section class="how" id="how" aria-labelledby="how-title">
+    <div class="wrap how__grid">
+      <div>
+        <h2 id="how-title" class="big">How I work</h2>
+        <p class="dropcap">I don't hand a spec to a designer, then a designer to an engineer, then wait. On my team I'm the designer. I write the data model. I check the spec against production with SQL before anyone builds on it, and I open the pull request that engineers review and ship.</p>
+        <p>AI is in every one of those steps. I've turned the repeatable parts of my work into 35+ skills and agents, from interview prep to release notes, and written them down well enough that a teammate runs them without me. What stays human is the judgment: what to build, whether the math is right, and whether the output is good enough for a customer to see.</p>
+      </div>
+      <ol class="chain" aria-label="My workflow">
+        <li><strong>Sketch</strong> Prototypes on real data, not lorem ipsum.</li>
+        <li><strong>Spec</strong> Data model, edge cases, decisions locked early.</li>
+        <li><strong>Data</strong> Production PostgreSQL, queried myself.</li>
+        <li><strong>PR</strong> Built locally, reviewed and merged by engineers.</li>
+        <li><strong>Ship</strong> Release notes, guides, live demo to 150+ coaches.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="console-sec" id="console" aria-labelledby="console-title">
+    <div class="wrap">
+      <h2 id="console-title" class="big big--ink">The console</h2>
+      <p class="standfirst standfirst--ink">A representative slice of my 35+ skills and agents, renamed and described in general terms (the real set is internal). Type to filter, use arrow keys to move, Enter to open. Commands like <code>/work</code> or <code>/contact</code> jump around the site. Press <kbd>/</kbd> anywhere to come back here.</p>
+      <div class="console">
+        <div class="console__bar">
+          <label class="console__prompt" for="cmd">/</label>
+          <input id="cmd" class="console__input" type="text" autocomplete="off" spellcheck="false"
+            role="combobox" aria-expanded="true" aria-controls="cmd-list" aria-autocomplete="list"
+            placeholder="search skills, or type /contact">
+          <span class="console__count" id="cmd-count" aria-live="polite"></span>
+        </div>
+        <div class="console__body">
+          <ul class="console__list" id="cmd-list" role="listbox" aria-label="Skills and commands"></ul>
+          <div class="console__detail" id="cmd-detail" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="exp" id="experience" aria-labelledby="exp-title">
+    <div class="wrap exp__grid">
+      <h2 id="exp-title" class="big">Experience</h2>
+      <ol class="credits">
+        <li><h3>Product Manager</h3><p class="credits__where">B2B coaching platform · now</p><p>3,600+ active clients and their coaches. AI and coaching-intelligence roadmap, product design, and hands-on delivery with two tech leads and an eight-person engineering team.</p></li>
+        <li><h3>Product Manager</h3><p class="credits__where">Vessel, Boise · from 2023</p><p>0 to 1 on a B2B assessment platform, an AI recommendation engine, onboarding time cut by 50%.</p></li>
+        <li><h3>Product Owner, Education &amp; Content</h3><p class="credits__where">Vessel · 2022–2023</p><p>Training programs for manufacturers. Education revenue up 3x in three months.</p></li>
+        <li><h3>Logistics Solutions Lead</h3><p class="credits__where">Vessel · 2021–2023</p><p>Forecasting tools that cut landed cost by 30%.</p></li>
+        <li><h3>Program Manager</h3><p class="credits__where">SMHeuristics · 2020–2021</p><p>Market research and analytics for a supply chain consulting service.</p></li>
+        <li><h3>B.S. Business Administration</h3><p class="credits__where">Boise State</p><p>Entrepreneurship Management.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="building" id="building" aria-labelledby="build-title">
+    <div class="wrap build__grid">
+      <div class="gk">
+        <h2 id="build-title" class="big big--ink">Building in public</h2>
+        <h3 class="gk__name">Gatekeeper <span class="gk__status">In progress</span></h3>
+        <p>A quality gate for AI-drafted lifecycle messages. Synthetic customers move through a made-up SaaS trial. A model drafts onboarding nudges and win-backs, a rubric scores each one on brand voice, grounding, personalization, compliance, and tone, and the gate routes it to auto-send, human review, or block. A staged-rollout view shows the call segment by segment.</p>
+        <p>The demo runs on precomputed outputs, so there's no backend or API key. One question drives it: where should the human sit in the loop for AI-written messages, and how do you measure it?</p>
+      </div>
+      <div class="future">
+        <h3 class="future__title">Coming in future issues</h3>
+        <ul>
+          <li><strong>pm-os-starter</strong> Public Claude Code skills: PRD from interview notes, QA plan from spec, release notes, SQL sanity check.</li>
+          <li><strong>Lifecycle analytics MCP server</strong> Read-only, permission-scoped tools over a synthetic event store.</li>
+          <li><strong>Summarization eval harness</strong> Models compared on cost, latency, and quality, with a fallback policy.</li>
+          <li><strong>Voice logging prototype</strong> Free-text logs become structured entries with a confirm step.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" aria-labelledby="skills-title">
+    <div class="wrap">
+      <h2 id="skills-title" class="big">Index</h2>
+      <dl class="index">
+        <div data-skill="AI Product"><dt>AI product</dt><dd>scoping and instrumentation; model and vendor evaluation; quality gates and human review; agentic and natural-language interfaces</dd></div>
+        <div data-skill="Design"><dt>Design</dt><dd>Figma; design-system upkeep; HTML and React prototypes; scored critique; v0, Bolt, Lovable</dd></div>
+        <div data-skill="Data & Analytics"><dt>Data</dt><dd>SQL on PostgreSQL; Metabase; Pendo; Microsoft Clarity; metric definition; post-launch audits</dd></div>
+        <div data-skill="Engineering Collaboration"><dt>Engineering</dt><dd>Git pull requests; local QA environments; feature flags; QA planning; vendor management</dd></div>
+        <div data-skill="AI Tooling"><dt>AI tooling</dt><dd>Claude Code; custom skills and agents; MCP integrations; prompt engineering</dd></div>
+        <div data-skill="Discovery & Research"><dt>Research</dt><dd>1:1 interviews; panel stratification; JTBD synthesis; research repositories</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <h2 id="contact-title" class="contact__title">Letters to the editor</h2>
+      <div class="contact__grid">
+        <p>I'm in Boise. When I'm not working I'm somewhere in Idaho's backcountry. I co-hosted an AI prototyping workshop for Boise's product meetup, and I'm always glad to compare notes on how teams build with AI.</p>
+        <ul class="contact__list">
+          <li><a href="mailto:jaredbrodd@gmail.com">jaredbrodd@gmail.com</a></li>
+          <li><a href="https://www.linkedin.com/in/jared-brodd" rel="me">LinkedIn</a></li>
+          <li><span class="soon">GitHub (coming soon)</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="colophon">
+  <div class="wrap">
+    <p>Colophon: set in Anybody, Source Serif 4, and JetBrains Mono. Two inks, pink and green. Details are generalized and visuals recreated with synthetic data to respect confidentiality.</p>
+  </div>
+</footer>
+<a class="hotkey" href="#console">Press <kbd>/</kbd> for the console</a>
+</body>
+</html>

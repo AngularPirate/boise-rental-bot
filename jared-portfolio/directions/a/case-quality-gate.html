@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quality Gate Case Study</title>
+<meta name="description" content="How Jared Brodd read 54,000+ AI outputs and recommended a staged rollout behind a quality gate instead of a full launch.">
+<link rel="canonical" href="case-quality-gate.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Public+Sans:ital,wght@0,400..700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<script defer src="js/tailor.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="masthead">
+  <div class="wrap masthead__row">
+    <a class="brand" href="./" data-keep-for>Jared Brodd</a>
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="./#work" data-keep-for>Work</a></li>
+        <li><a href="./#route" data-keep-for>How I work</a></li>
+        <li><a href="./#contact" data-keep-for>Contact</a></li>
+      </ul>
+    </nav>
+    <p class="coords" aria-hidden="true">43.615° N · 116.202° W</p>
+  </div>
+</header>
+
+<main id="main">
+  <header class="cs-hero">
+    <div class="wrap">
+      <a class="cs-back" href="./#work" data-keep-for>← All work</a>
+      <h1 class="cs-title">Reading 54,000 AI outputs before the launch call</h1>
+      <p class="cs-hook">A new AI recap looked great in the demo. I read what it would actually produce for our real clients, then recommended a staged rollout behind an explicit quality gate instead of a full launch.</p>
+      <ul class="cs-facts">
+        <li><strong>A B2B coaching platform</strong>3,600+ active clients and their coaches</li>
+        <li><strong>My role</strong>Product manager, AI and coaching-intelligence track</li>
+        <li><strong>Scale of the read</strong>54,000+ outputs across 3,400+ clients</li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="cs-body">
+    <nav class="cs-toc" aria-label="On this page">
+      <ol>
+        <li><a href="#context">Context</a></li>
+        <li><a href="#problem">Problem</a></li>
+        <li><a href="#decisions">Decisions</a></li>
+        <li><a href="#gate">The gate, redrawn</a></li>
+        <li><a href="#outcome">Outcome</a></li>
+        <li><a href="#next">What I'd do next</a></li>
+      </ol>
+    </nav>
+
+    <article>
+      <section class="cs-section" id="context" aria-labelledby="h-context">
+        <h2 id="h-context">Context</h2>
+        <p>The platform already ran an AI summarization pipeline in production. The next step on the roadmap I own was a new AI recap capability built on top of it.</p>
+        <p>I own the AI and coaching-intelligence track. That made the launch call mine to recommend.</p>
+      </section>
+
+      <section class="cs-section" id="problem" aria-labelledby="h-problem">
+        <h2 id="h-problem">Problem</h2>
+        <p>Demos are picked from good inputs. Real clients aren't. Some log a lot, some barely log at all, and some have history that doesn't line up. A recap that reads well for the median client can be wrong, thin, or awkward for the long tail.</p>
+        <p>Coaching runs on trust. A confident, wrong recap in front of a client costs more than a missing one. So the question wasn't "does it work?" It was "is it good enough for every client we'd show it to, and what happens when it isn't?"</p>
+      </section>
+
+      <section class="cs-section" id="decisions" aria-labelledby="h-decisions">
+        <h2 id="h-decisions">Decisions</h2>
+        <div class="decision">
+          <h3>Size it from production, not from the demo</h3>
+          <p>I pulled what the capability would produce across the real client base: 54,000+ outputs from 3,400+ clients. I queried production myself and read through the results instead of a hand-picked sample.</p>
+          <p class="tradeoff"><strong>Trade-off:</strong> slower than a demo review. In exchange, the long tail showed up before launch instead of after.</p>
+        </div>
+        <div class="decision">
+          <h3>Write the gate down before judging</h3>
+          <p>I defined what "good enough" meant as an explicit quality gate, so the launch decision rested on a written bar rather than on how the last few examples felt.</p>
+          <p class="tradeoff"><strong>Trade-off:</strong> a strict gate holds back some outputs that would have been fine. I'd rather explain a held-back recap than a wrong one.</p>
+        </div>
+        <div class="decision">
+          <h3>Stage the rollout instead of launching to everyone</h3>
+          <p>I recommended starting where the outputs cleared the gate and widening only as quality held, rather than turning it on for every client at once.</p>
+          <p class="tradeoff"><strong>Trade-off:</strong> slower to full reach. It keeps the decision reversible and gives us real usage to measure before each step.</p>
+        </div>
+      </section>
+
+      <section class="cs-section cs-wide" id="gate" aria-labelledby="h-gate">
+        <h2 id="h-gate">The gate, redrawn</h2>
+        <p>Walk the route from raw outputs to a staged rollout. Cohorts and shares below are synthetic; the shape of the process is real.</p>
+        <figure class="xsec" style="margin:0">
+          <svg class="xsec__svg" viewBox="0 0 900 300" role="img" aria-labelledby="xs-t xs-d">
+            <title id="xs-t">Cross-section of the rollout route</title>
+            <desc id="xs-d">Five stations along a rising profile: production outputs, read and sort, the quality gate, a first cohort, and widening. The gate is a barrier between reading and the first cohort.</desc>
+            <path d="M0 260 C 120 250, 160 220, 230 205 S 380 150, 450 140 S 620 95, 700 80 S 850 55, 900 50 L900 300 L0 300Z" fill="#c9e0b8"/>
+            <path d="M0 260 C 120 250, 160 220, 230 205 S 380 150, 450 140 S 620 95, 700 80 S 850 55, 900 50" fill="none" stroke="#8a4b22" stroke-width="2.5"/>
+            <path class="xs-flow" d="M110 250 L 270 196 L 450 140 L 640 92 L 820 60"/>
+            <line class="xs-gate" x1="450" y1="70" x2="450" y2="210"/>
+            <g class="xs-stage" data-i="0"><rect x="20" y="160" width="172" height="56" rx="2"/><text x="32" y="184">Production outputs</text><text class="sub" x="32" y="204">54,000+ · 3,400+ clients</text></g>
+            <g class="xs-stage" data-i="1"><rect x="206" y="104" width="150" height="56" rx="2"/><text x="218" y="128">Read and sort</text><text class="sub" x="218" y="148">SQL, then reading</text></g>
+            <g class="xs-stage" data-i="2"><rect x="380" y="18" width="140" height="44" rx="2"/><text x="392" y="46">Quality gate</text></g>
+            <g class="xs-stage" data-i="3"><rect x="560" y="122" width="150" height="56" rx="2"/><text x="572" y="146">First cohort</text><text class="sub" x="572" y="166">Synthetic: ~10%</text></g>
+            <g class="xs-stage" data-i="4"><rect x="740" y="92" width="140" height="56" rx="2"/><text x="752" y="116">Widen</text><text class="sub" x="752" y="136">Only while it holds</text></g>
+          </svg>
+          <div class="xsec__controls" role="group" aria-label="Stations">
+            <button type="button" data-i="0">Outputs</button>
+            <button type="button" data-i="1">Read</button>
+            <button type="button" data-i="2">Gate</button>
+            <button type="button" data-i="3">First cohort</button>
+            <button type="button" data-i="4">Widen</button>
+          </div>
+          <p class="xsec__note" id="xs-note" aria-live="polite"></p>
+          <figcaption class="xsec__label">Recreated with synthetic data. Not the real rubric, cohorts, or outputs.</figcaption>
+        </figure>
+      </section>
+
+      <section class="cs-section" id="outcome" aria-labelledby="h-outcome">
+        <h2 id="h-outcome">Outcome</h2>
+        <p>The recommendation was a staged rollout behind an explicit quality gate, not a full launch. This page covers that decision and how I got to it. Rollout results aren't included here.</p>
+        <p>The habit carried forward. When the model behind our production summaries was retired, I led the replacement and set the fallback plan with engineering, and the same question applied: is the new output good enough, and what happens when it isn't?</p>
+      </section>
+
+      <section class="cs-section" id="next" aria-labelledby="h-next">
+        <h2 id="h-next">What I'd do next</h2>
+        <p>Make the gate cheap to rerun. An automated scorer, checked against human reads, would let every model change or prompt change go through the same bar before it reaches a client. I'd also track what slips past the gate after launch, so the bar gets tuned on evidence.</p>
+        <p>I'm building the public version of this now: <strong>Gatekeeper</strong>, a quality gate for AI-drafted lifecycle messages on synthetic data.</p>
+      </section>
+
+      <p class="footnote">Details are generalized and visuals recreated to respect confidentiality. No real outputs, prompts, rubric text, or client data appear on this page.</p>
+    </article>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap"><p>Jared Brodd · <a href="mailto:jaredbrodd@gmail.com" style="color:#f6b3d6">jaredbrodd@gmail.com</a> · <a href="https://www.linkedin.com/in/jared-brodd" style="color:#f6b3d6">LinkedIn</a></p></div>
+</footer>
+
+<script>
+(function () {
+  var notes = [
+    'Every output the recap would produce for the real client base, not a demo set. 54,000+ of them, across 3,400+ clients.',
+    'Sort with SQL first: by how much history a client has, how recent it is, how uneven. Then read, with the most attention on the thin and messy cases.',
+    'A written bar. Outputs that clear it can go out. Outputs that don\'t are held back, and that is an acceptable result, not a failure.',
+    'Start with the clients whose outputs clear the gate. In this synthetic version, about one in ten. Watch real usage before the next step.',
+    'Widen only while quality holds. If the bar starts slipping, stop and fix before reaching more clients.'
+  ];
+  var btns = document.querySelectorAll('.xsec__controls button');
+  var stages = document.querySelectorAll('.xs-stage');
+  var note = document.getElementById('xs-note');
+  function set(i) {
+    btns.forEach(function (b, k) { b.setAttribute('aria-pressed', k === i ? 'true' : 'false'); });
+    stages.forEach(function (s, k) { s.classList.toggle('is-on', k === i); });
+    note.textContent = notes[i];
+  }
+  btns.forEach(function (b, i) { b.addEventListener('click', function () { set(i); }); });
+  stages.forEach(function (s, i) { s.style.cursor = 'pointer'; s.addEventListener('click', function () { set(i); }); });
+  set(0);
+})();
+</script>
+</body>
+</html>

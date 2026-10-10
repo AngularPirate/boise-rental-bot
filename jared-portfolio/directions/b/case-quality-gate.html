@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quality Gate Case Study</title>
+<meta name="description" content="How Jared Brodd reviewed 54,000+ AI outputs and recommended a staged rollout behind a quality gate.">
+<link rel="canonical" href="case-quality-gate.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<script defer src="js/tailor.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap top__row">
+    <a class="brand" href="./" data-keep-for>Jared Brodd</a>
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="./#work" data-keep-for>Work</a></li>
+        <li><a href="./#how" data-keep-for>How I work</a></li>
+        <li><a class="nav__cta" href="./#contact" data-keep-for>Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <header class="cs-head">
+    <div class="wrap">
+      <a class="cs-back" href="./#work" data-keep-for>← Back to all work</a>
+      <h1 class="cs-title">The 54,000-output read before a launch call</h1>
+      <p class="cs-hook">A new AI recap looked great in the demo. Before anyone turned it on, I read what it would really produce for our clients. Then I recommended a staged rollout behind an explicit quality gate, not a full launch.</p>
+      <ul class="cs-facts">
+        <li><strong>Where</strong>A B2B coaching platform, 3,600+ active clients</li>
+        <li><strong>My role</strong>PM for the AI and coaching-intelligence track</li>
+        <li><strong>The read</strong>54,000+ outputs, 3,400+ clients</li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="cs-paper">
+    <div class="cs-body">
+      <section aria-labelledby="h-context">
+        <h2 id="h-context">Context</h2>
+        <p>The platform already ran an AI summarization pipeline in production. The next item on the roadmap I own was a new AI recap capability built on top of it. The launch call was mine to recommend.</p>
+      </section>
+      <section aria-labelledby="h-problem">
+        <h2 id="h-problem">Problem</h2>
+        <p>Demos are picked from good inputs. Real clients aren't tidy. Some log a lot, some barely log at all, some have history that doesn't line up. A recap that reads well for the typical client can be wrong or thin for the long tail.</p>
+        <p>Coaching runs on trust, and a confident, wrong recap costs more than a missing one. So the real question was: is it good enough for every client we'd show it to, and what happens when it isn't?</p>
+      </section>
+      <section aria-labelledby="h-decisions">
+        <h2 id="h-decisions">Decisions</h2>
+        <div class="decision">
+          <h3>Size it from production, not the demo</h3>
+          <p>I pulled what the recap would produce across the real base, 54,000+ outputs from 3,400+ clients, querying production myself.</p>
+          <p class="tradeoff"><strong>Trade-off:</strong> slower than a demo review, but the long tail shows up before launch instead of after.</p>
+        </div>
+        <div class="decision">
+          <h3>Write the bar down first</h3>
+          <p>I defined "good enough" as an explicit quality gate, so the decision rested on a written standard rather than on how the last few examples felt.</p>
+          <p class="tradeoff"><strong>Trade-off:</strong> a strict gate holds back some fine outputs. A held-back recap is easier to explain than a wrong one.</p>
+        </div>
+        <div class="decision">
+          <h3>Stage it instead of launching to everyone</h3>
+          <p>Start where outputs cleared the gate, widen only as quality held.</p>
+          <p class="tradeoff"><strong>Trade-off:</strong> slower to full reach, but reversible, and every step is measured on real usage.</p>
+        </div>
+      </section>
+    </div>
+
+    <section class="cs-wide" aria-labelledby="h-bench">
+      <h2 id="h-bench" class="title" style="font-size:clamp(1.8rem,3.4vw,2.6rem)">Try the bench</h2>
+      <p class="lede">Pick a synthetic recap, tick the checks it passes, and see where a gate like this would route it. The drafts and the checks are illustrative, not the real rubric.</p>
+      <div class="bench">
+        <div class="bench__pick" role="group" aria-label="Pick a draft">
+          <button type="button" data-d="0" aria-pressed="true">Draft A</button>
+          <button type="button" data-d="1" aria-pressed="false">Draft B</button>
+          <button type="button" data-d="2" aria-pressed="false">Draft C</button>
+        </div>
+        <div class="bench__grid">
+          <div class="bench__draft"><p id="draft"></p></div>
+          <fieldset style="border:0;margin:0;padding:0">
+            <legend class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Checks this draft passes</legend>
+            <ul class="checks">
+              <li><label><input type="checkbox" value="grounded"><span>Grounded<small>Every claim traces to something the client logged.</small></span></label></li>
+              <li><label><input type="checkbox" value="accurate"><span>Accurate<small>Numbers and dates are right.</small></span></label></li>
+              <li><label><input type="checkbox" value="useful"><span>Useful<small>A coach would act on it.</small></span></label></li>
+              <li><label><input type="checkbox" value="voice"><span>On voice<small>Supportive, not salesy or clinical.</small></span></label></li>
+              <li><label><input type="checkbox" value="safe"><span>Safe<small>No advice the platform shouldn't give.</small></span></label></li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="bench__out" aria-live="polite"><span>This draft goes to</span><span class="bench__route" id="route" data-r="block">Block</span><span id="reason"></span></div>
+        <p class="bench__note">Synthetic. Recreated to show the shape of the decision, with made-up drafts and made-up checks.</p>
+      </div>
+    </section>
+
+    <div class="cs-body">
+      <section aria-labelledby="h-outcome">
+        <h2 id="h-outcome">Outcome</h2>
+        <p>My recommendation was a staged rollout behind an explicit quality gate rather than a full launch. This page is about that decision. Rollout results aren't included here.</p>
+        <p>The same question came back when the model behind our production summaries was retired. I led the replacement and the fallback plan with engineering, and the bar was the same: is the new output good enough, and what happens when it isn't?</p>
+      </section>
+      <section aria-labelledby="h-next">
+        <h2 id="h-next">What I'd do next</h2>
+        <p>Make the gate cheap to rerun: an automated scorer, checked against human reads, so every model or prompt change passes the same bar before it reaches a client. Then track what slips through after launch and tune the bar on that evidence.</p>
+        <p>The public version is underway: <strong>Gatekeeper</strong>, the same idea for AI-drafted lifecycle messages, on synthetic data.</p>
+      </section>
+      <p class="footnote">Details are generalized and visuals recreated to respect confidentiality. No real outputs, prompts, rubric text, or client data appear here.</p>
+    </div>
+  </div>
+</main>
+<footer class="foot"><div class="wrap"><p>Jared Brodd · <a href="mailto:jaredbrodd@gmail.com" style="color:#ffd43b">jaredbrodd@gmail.com</a> · <a href="https://www.linkedin.com/in/jared-brodd" style="color:#ffd43b">LinkedIn</a></p></div></footer>
+<script>
+(function () {
+  var drafts = [
+    { text: 'This week Sam checked in four times and finished two of three goals. The missed one has slipped two weeks running. Worth asking what's in the way.', pass: ['grounded', 'accurate', 'useful', 'voice', 'safe'] },
+    { text: 'Priya had a perfect week with seven check-ins! She's clearly ready to double every goal and drop her coaching sessions.', pass: ['voice'] },
+    { text: 'Luis checked in twice. Not much to go on this week. A short note asking how the weekend plan went might help.', pass: ['grounded', 'accurate', 'voice', 'safe'] }
+  ];
+  var cur = 0;
+  var boxes = document.querySelectorAll('.checks input');
+  var pick = document.querySelectorAll('.bench__pick button');
+  function load(i) {
+    cur = i;
+    pick.forEach(function (b, k) { b.setAttribute('aria-pressed', k === i ? 'true' : 'false'); });
+    document.getElementById('draft').textContent = drafts[i].text;
+    boxes.forEach(function (b) { b.checked = drafts[i].pass.indexOf(b.value) !== -1; });
+    route();
+  }
+  function route() {
+    var on = {}; var n = 0;
+    boxes.forEach(function (b) { on[b.value] = b.checked; if (b.checked) n++; });
+    var r, why;
+    if (!on.safe || !on.accurate) { r = 'block'; why = 'Fails accuracy or safety. No amount of polish makes that okay to send.'; }
+    else if (n === 5) { r = 'send'; why = 'Clears every check.'; }
+    else { r = 'review'; why = 'Safe and accurate, but not all the way there. A person decides.'; }
+    var el = document.getElementById('route');
+    el.setAttribute('data-r', r);
+    el.textContent = { send: 'Auto-send', review: 'Human review', block: 'Block' }[r];
+    document.getElementById('reason').textContent = why;
+  }
+  pick.forEach(function (b, i) { b.addEventListener('click', function () { load(i); }); });
+  boxes.forEach(function (b) { b.addEventListener('change', route); });
+  load(0);
+})();
+</script>
+</body>
+</html>

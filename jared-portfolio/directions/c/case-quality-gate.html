@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Quality Gate Case Study</title>
+<meta name="description" content="Jared Brodd read 54,000+ AI outputs and recommended a staged rollout behind a quality gate instead of a full launch.">
+<link rel="canonical" href="case-quality-gate.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,400..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<script defer src="js/tailor.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="mast">
+  <div class="wrap mast__row">
+    <a class="mast__name" href="./" data-keep-for>Jared Brodd</a>
+    <p class="mast__issue">Fall 2026 · Feature story</p>
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="./#work" data-keep-for>Work</a></li>
+        <li><a href="./#console" data-keep-for>Console</a></li>
+        <li><a href="./#contact" data-keep-for>Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <header class="cs-cover">
+    <div class="cover__dots" aria-hidden="true"></div>
+    <div class="wrap">
+      <a class="cs-back" href="./#work" data-keep-for>← Back to the issue</a>
+      <h1 class="cs-title">I read 54,000 AI outputs, then argued against a full launch</h1>
+      <p class="cs-dek">A new AI recap looked great in the demo. Before anyone turned it on, I read what it would really produce for our clients, and recommended a staged rollout behind an explicit quality gate.</p>
+      <ul class="cs-facts">
+        <li><strong>Where</strong>A B2B coaching platform, 3,600+ active clients</li>
+        <li><strong>Role</strong>PM, AI and coaching-intelligence track</li>
+        <li><strong>The read</strong>54,000+ outputs, 3,400+ clients</li>
+      </ul>
+    </div>
+  </header>
+
+  <article>
+    <div class="article">
+      <section aria-labelledby="h-context">
+        <h2 id="h-context">Context</h2>
+        <p class="dropcap">The platform already ran an AI summarization pipeline in production. Next on the roadmap I own was a new AI recap capability built on top of it, and the launch call was mine to recommend.</p>
+      </section>
+      <section aria-labelledby="h-problem">
+        <h2 id="h-problem">Problem</h2>
+        <p>Demos are picked from good inputs. Real clients aren't tidy. Some log a lot, some barely log at all, some have history that doesn't line up. A recap that reads well for the typical client can be wrong or thin for the long tail.</p>
+        <p>Coaching runs on trust. So the question wasn't whether it worked. It was whether it was good enough for every client we'd show it to, and what would happen when it wasn't.</p>
+        <p class="pull"><span>A confident, wrong recap costs more than a missing one.</span></p>
+      </section>
+      <section aria-labelledby="h-decisions">
+        <h2 id="h-decisions">Decisions</h2>
+        <h3>Size it from production, not the demo</h3>
+        <p>I pulled what the recap would produce across the real base, 54,000+ outputs from 3,400+ clients, querying production myself.</p>
+        <p class="tradeoff"><strong>Trade-off</strong> Slower than a demo review. The long tail shows up before launch instead of after.</p>
+        <h3>Write the bar down first</h3>
+        <p>I defined "good enough" as an explicit quality gate, so the call rested on a written standard rather than on how the last few examples felt.</p>
+        <p class="tradeoff"><strong>Trade-off</strong> A strict gate holds back some fine outputs. A held-back recap is easier to explain than a wrong one.</p>
+        <h3>Stage it, don't flip it</h3>
+        <p>Start where outputs cleared the gate. Widen only while quality holds.</p>
+        <p class="tradeoff"><strong>Trade-off</strong> Slower to full reach, but reversible, and every step is measured on real usage.</p>
+      </section>
+    </div>
+
+    <section class="ladder-wrap" aria-labelledby="h-ladder">
+      <h2 id="h-ladder" class="big" style="font-size:clamp(2rem,4vw,3rem)">The rollout, redrawn</h2>
+      <div class="ladder">
+        <div class="ladder__ctl">
+          <div class="ladder__steps" role="group" aria-label="Rollout stage">
+            <button type="button" data-s="0" aria-pressed="true">Gate</button>
+            <button type="button" data-s="1" aria-pressed="false">Stage 1</button>
+            <button type="button" data-s="2" aria-pressed="false">Stage 2</button>
+            <button type="button" data-s="3" aria-pressed="false">Stage 3</button>
+            <button type="button" data-s="4" aria-pressed="false">Everyone who clears</button>
+          </div>
+          <label class="ladder__dip"><input type="checkbox" id="dip"> Quality slips after stage 2</label>
+        </div>
+        <div class="ladder__grid" id="ladder" role="img" aria-label="100 synthetic clients shown as dots. Colors show who has the recap, who is held back by the gate, and who is waiting."></div>
+        <ul class="ladder__legend" aria-hidden="true">
+          <li><i style="background:#ff4fa3"></i>Has the recap</li>
+          <li><i style="box-shadow:inset 0 0 0 3px #00a05a"></i>Held back by the gate</li>
+          <li><i style="background:#d9dad5"></i>Waiting for a later stage</li>
+        </ul>
+        <p class="ladder__out" id="ladder-out" aria-live="polite"></p>
+        <p class="ladder__label">Recreated with synthetic data: 100 made-up clients, made-up pass rate and stage sizes.</p>
+      </div>
+    </section>
+
+    <div class="article">
+      <section aria-labelledby="h-outcome">
+        <h2 id="h-outcome">Outcome</h2>
+        <p>My recommendation was a staged rollout behind an explicit quality gate rather than a full launch. This story is about that decision. Rollout results aren't included here.</p>
+        <p>The same question came back when the model behind our production summaries was retired. I led the replacement and the fallback plan with engineering, and the bar didn't change: is the new output good enough, and what happens when it isn't?</p>
+      </section>
+      <section aria-labelledby="h-next">
+        <h2 id="h-next">What I'd do next</h2>
+        <p>Make the gate cheap to rerun: an automated scorer, checked against human reads, so every model or prompt change clears the same bar before it reaches a client. Then track what slips through after launch and tune the bar on that evidence.</p>
+        <p>The public version is underway. <strong>Gatekeeper</strong> asks the same question of AI-drafted lifecycle messages, on synthetic data.</p>
+      </section>
+      <p class="footnote">Details are generalized and visuals recreated to respect confidentiality. No real outputs, prompts, rubric text, or client data appear here.</p>
+    </div>
+  </article>
+</main>
+<footer class="colophon"><div class="wrap"><p>Jared Brodd · <a href="mailto:jaredbrodd@gmail.com" style="color:#ff4fa3">jaredbrodd@gmail.com</a> · <a href="https://www.linkedin.com/in/jared-brodd" style="color:#ff4fa3">LinkedIn</a></p></div></footer>
+<script>
+(function () {
+  var seed = 7, R = function () { seed = (seed * 16807) % 2147483647; return seed / 2147483647; };
+  var grid = document.getElementById('ladder'), out = document.getElementById('ladder-out'), dip = document.getElementById('dip');
+  var dots = [];
+  for (var i = 0; i < 100; i++) {
+    var d = document.createElement('span'); d.className = 'ladder__dot';
+    dots.push({ el: d, pass: R() < 0.72, order: R() });
+    grid.appendChild(d);
+  }
+  var passers = dots.filter(function (d) { return d.pass; }).sort(function (a, b) { return a.order - b.order; });
+  var share = [0, 0.15, 0.4, 0.7, 1];
+  var stage = 0;
+  var btns = document.querySelectorAll('.ladder__steps button');
+  function render() {
+    var eff = (dip.checked && stage > 2) ? 2 : stage;
+    var n = Math.round(passers.length * share[eff]);
+    dots.forEach(function (d) { d.el.className = 'ladder__dot' + (!d.pass && stage > 0 ? ' is-held' : ''); });
+    passers.slice(0, n).forEach(function (d) { d.el.classList.add(dip.checked && stage > 2 ? 'is-paused' : 'is-on'); if (dip.checked && stage > 2) d.el.classList.add('is-on'); });
+    btns.forEach(function (b, k) { b.setAttribute('aria-pressed', k === stage ? 'true' : 'false'); });
+    var held = dots.length - passers.length;
+    var t;
+    if (stage === 0) t = 'Before anyone gets the recap, every client\'s output is checked against the gate. In this synthetic run, ' + passers.length + ' of 100 clear it and ' + held + ' are held back.';
+    else if (dip.checked && stage > 2) t = 'Quality slipped after stage 2 in this run, so the rollout stays at ' + n + ' clients until the cause is fixed. Nobody new gets a recap that might be wrong.';
+    else if (stage === 4) t = 'All ' + n + ' clients who clear the gate have the recap. The ' + held + ' held back still don\'t, by design.';
+    else t = 'Stage ' + stage + ': ' + n + ' clients have the recap. The next stage opens only if quality holds.';
+    out.textContent = t;
+  }
+  btns.forEach(function (b) { b.addEventListener('click', function () { stage = +b.getAttribute('data-s'); render(); }); });
+  dip.addEventListener('change', render);
+  render();
+})();
+</script>
+</body>
+</html>
